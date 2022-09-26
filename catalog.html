@@ -60,8 +60,74 @@
 			</ul>
 		</header>
 
+		<section class="catalog-hotel">
+			<h2 class="visually-hidden">Список фильтров по поиску гостиницы</h2>
 
+			<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
+
+				<fieldset class="catalog-filter-group">
+					<legend class="catalog-filter-title">Инфраструктура:</legend>
+					<ul class="catalog-filter-list">
+						<li class="catalog-filter-item">
+							<label class="control">
+								<input class="control-input" type="checkbox" name="swimming-pool" checked> Бассейн
+							</label>
+						</li>
+						<li class="catalog-filter-item">
+							<label class="control">
+								<input class="control-input" type="checkbox" name="parking" checked> Парковка
+							</label>
+						</li>
+						<li class="catalog-filter-item">
+							<label class="control">
+								<input class="control-input" type="checkbox" name="Wi-Fi"> wi-fi
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<fieldset class="catalog-filter-group">
+					<legend class="catalog-filter-title">Тип жилья:</legend>
+					<ul class="catalog-filter-list">
+						<li class="catalog-filter-item">
+							<label class="control">
+								<input class="control-input" type="radio" name="housing-type" value="hotel" checked> Гостиница
+							</label>
+						</li>
+						<li class="catalog-filter-item">
+							<label class="control">
+								<input class="control-input" type="radio" name="housing-type" value="motel"> Мотель
+							</label>
+						</li>
+						<li class="catalog-filter-item">
+							<label class="control">
+								<input class="control-input" type="radio" name="housing-type"  value="apartments"> Аппартаменты
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<button class="button" type="submit">Применить</button>
+				<button class="button" type="submit">Сбросить</button>
+			</form>
+
+			<select class="select-control" aria-label="Сортировка">
+				<option value="cheaper" selected>Сначала дешевые</option>
+				<option value="expensive">Сначала дороже</option>
+				<option value="popular" >Популярное</option>
+			</select>
+
+			<a class="button button-active" href="#">
+				<span class="visually-hidden">Показать карточки</span>
+			</a>
+			<a class="button" href="#">
+				<span class="visually-hidden">Показать слайд-шоу</span>
+			</a>
+			<a class="button" href="#">
+				<span class="visually-hidden">Показать список</span>
+			</a>
+
+		</section>
 	</main>
-
 </body>
 </html>
