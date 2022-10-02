@@ -119,26 +119,24 @@
 				<button class="button" type="reset">Сбросить</button>
 			</form>
 
-			<div class="catalog-list">
+			<p class="catalog-result">Найдено гостиниц: </p>
 
-				<p class="catalog-result">Найдено гостиниц: </p>
+			<select class="select-control" aria-label="Сортировка">
+				<option value="cheaper" selected>Сначала дешевые</option>
+				<option value="expensive">Сначала дороже</option>
+				<option value="popular" >Популярное</option>
+			</select>
 
-				<select class="select-control" aria-label="Сортировка">
-					<option value="cheaper" selected>Сначала дешевые</option>
-					<option value="expensive">Сначала дороже</option>
-					<option value="popular" >Популярное</option>
-				</select>
+			<a class="sort-button button-active" href="#">
+				<span class="visually-hidden">Показать карточки</span>
+			</a>
+			<a class="sort-button" href="#">
+				<span class="visually-hidden">Показать слайд-шоу</span>
+			</a>
+			<a class="sort-button" href="#">
+				<span class="visually-hidden">Показать список</span>
+			</a>
 
-				<a class="sort-button button-active" href="#">
-					<span class="visually-hidden">Показать карточки</span>
-				</a>
-				<a class="sort-button" href="#">
-					<span class="visually-hidden">Показать слайд-шоу</span>
-				</a>
-				<a class="sort-button" href="#">
-					<span class="visually-hidden">Показать список</span>
-				</a>
-			</div>
 
 			<ul class="product-list">
 				<li class="product-card">
