@@ -9,7 +9,7 @@
     <header class="page-header">
 
       <a class="logo-link" href="index.html">
-        <img class="logo-image" src="#" alt="Логотип сайта Седона">
+        <img class="logo-image" src="images/header/header-logo.svg" width="140" height="70" alt="Логотип сайта Седона">
       </a>
 
       <nav class="navigation">
@@ -28,11 +28,18 @@
         <ul class="navigation-user">
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
+              <!--Тут у меня возникли сомнения. Сперва я подумал, что это просто декоративная картинка,
+                но потом понял, если вдруг наш файл с css удалится, то пользователь сайта не сможет найти эту кнопку.
+                Поэтому вставляем тут тег img. Еще я думаю тут не стоит прописывать alt (хотя могу ошибаться) т.к.
+                у нас уже указано это слово в классе visually-hidden, иначе скринридер два раза прочитает слово поиск,
+                если я правильно понимаю, но опять же могу ошибаться и готов переделать-->
+              <img src="images/header/header-search.svg" width="18" height="18" alt="">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
+              <img src="images/header/header-heart.svg" width="18" height="17" alt="">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
