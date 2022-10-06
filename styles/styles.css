@@ -40,13 +40,11 @@ body {
 
 .navigation ul {
 	list-style: none;
-	padding: 0px;
 }
 
 .navigation-user-link-search {
 	background-image: url("../images/header/search.svg");
 	background-repeat: no-repeat;
-
 }
 
 .navigation-user-link-heart {
@@ -101,7 +99,7 @@ body {
 	content: url("../images/main/main-bottom-detail.svg");
 	position: relative;
 	left: 0px;
-	bottom: -5px;
+	bottom: -4px;
 }
 
 
