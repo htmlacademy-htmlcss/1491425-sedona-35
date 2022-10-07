@@ -25,6 +25,11 @@ body {
 	background-color: #F2F2F2;
 }
 
+.content {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
 .visually-hidden {
 	visibility: hidden;
 }
@@ -97,3 +102,56 @@ body {
 }
 
 /* Main-index */
+
+/* Section Hero */
+
+.main-index {
+	border: 1px solid red;
+}
+
+.hero {
+	border: 1px solid red;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+}
+
+.hero-banner {
+	display: block;
+	width: 1200px;
+	padding-top: 51px;
+	margin-bottom: 69px;
+	background-color: #000000;
+	background-image: url("../images/main/main-banner.jpg");
+	background-repeat: no-repeat;
+}
+
+.hero-bottom-detail {
+	height: 57px;
+	background-image: url("../images/main/main-bottom-detail.svg");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.hero-greetings {
+	margin-bottom: 21px;
+}
+
+.hero-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 25px;
+}
+
+.hero-text {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	color: #333333;
+	margin-bottom: 90px;
+}
+
+/* Advantages */
+
