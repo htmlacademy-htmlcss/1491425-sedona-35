@@ -258,5 +258,35 @@ body {
 
 /* Hotel-search */
 
+.hotel-search {
+	background: #FFFFFF;
+	text-align: center;
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
 
+.hotel-search-interested {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.hotel-search-text {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	color: #333333;
+	margin-top: 0;
+	margin-bottom: 54px;
+}
+
+.hotel-search-link {
+	background-color: #756157;
+	font-size: 20px;
+	line-height: 36px;
+	padding: 8px 50px;
+}
 
