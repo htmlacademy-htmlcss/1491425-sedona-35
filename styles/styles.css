@@ -110,12 +110,7 @@ body {
 
 /* Section Hero */
 
-.main-index {
-	border: 1px solid red;
-}
-
 .hero {
-	border: 1px solid red;
 	font-family: 'PT Sans', sans-serif;
 	text-align: center;
 }
@@ -161,7 +156,7 @@ body {
 	margin-bottom: 90px;
 }
 
-/* Advantages */
+/* Section Advantages */
 
 .advantages ul {
 	list-style-type: none;
@@ -209,12 +204,12 @@ body {
 	color: #FFFFFF;
 }
 
-/* Services */
+/* Section Services */
 
 .services ul {
 	list-style-type: none;
 	padding: 0;
-	margin-top: 0;
+	margin: 0;
 	display: flex;
 	justify-content: space-between;
 }
@@ -226,9 +221,13 @@ body {
 
 .services-item {
 	width: 230px;
+	height: 384px;
 	padding: 80px 85px 0;
 	text-align: center;
 }
+
+/* тут я не смог понять, как у псевдоэлемента сделать отступ вниз. Пришлось классу services-subtitle, что ниже расположен, сделать margin-top 
+хотя была идея сделать все по правилам, то есть сделать отступы только margin-bottom у элементов*/
 
 .services-item-img-house::before {
 	content: url("../images/main/services-house.svg");
@@ -252,11 +251,10 @@ body {
 
 .services-text {
 	color: #333333;
-	margin-top: 0;
-	margin-bottom: 81px;
+	margin: 0;
 }
 
-/* Hotel-search */
+/* Section Hotel-search */
 
 .hotel-search {
 	background: #FFFFFF;
@@ -290,3 +288,122 @@ body {
 	padding: 8px 50px;
 }
 
+/* Section Subscribe */
+
+.subscribe {
+	background-color: #000000;
+	background-image: url("../images/main/subscribe-background.jpg");
+	background-repeat: no-repeat;
+	text-align: center;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	padding-top: 96px ;
+	padding-bottom: 104px ;
+}
+
+.subscribe-news-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.subscribe-description {
+	font-size: 22px;
+	line-height: 26px;
+	margin-top: 0;
+	margin-bottom: 54px;
+}
+
+.subscribe-form {
+	display: flex;
+	justify-content: center;
+}
+
+.subscribe-email {
+	width: 452px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 12px 20px;
+	background-color: #F2F2F2;
+	border-radius: 4px 0px 0px 4px;
+	border: none;
+}
+
+.subscribe-button {
+	font-size: 20px;
+	line-height: 36px;
+	padding: 8px 50px;
+	background-color: #82B3D3;
+	border-radius: 0px 4px 4px 0px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Section Footer */
+
+.page-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 120px;
+	padding: 0 70px;
+}
+
+.page-footer ul {
+	list-style-type: none;
+	width: 142px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.footer-social-item {
+	text-align: center;
+	width: 48px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.social-link-vkontakte {
+	background-image: url("../images/footer/footer-social-vkontakte.svg");
+	background-repeat: no-repeat;
+	background-position: center ;
+	width: 24px;
+	height: 14px;
+	padding: 0 10px;
+}
+
+.social-link-telegram {
+	background-image: url("../images/footer/footer-social-telegram.svg");
+	background-repeat: no-repeat;
+	background-position: center ;
+	width: 18px;
+	height: 15px;
+	padding: 1px 10px;
+}
+
+.social-link-youtube {
+	background-image: url("../images/footer/footer-social-youtube.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 22px;
+	height: 17px;
+	padding: 0 10px;
+}
+
+.footer-phone {
+	font-family: "PT Sans" sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+}
