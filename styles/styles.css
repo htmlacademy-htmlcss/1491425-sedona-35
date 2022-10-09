@@ -41,7 +41,7 @@ body {
 	height: 1px;
 }
 
-/* Header  */
+/* Start Header  */
 
 .page-header {
 	background-color: #FFFFFF;
@@ -110,9 +110,9 @@ body {
 
 /* End Header */
 
-/* Main-index */
+/* Start Main-index */
 
-/* Section Hero */
+/* Start Section Hero */
 
 .hero {
 	font-family: 'PT Sans', sans-serif;
@@ -162,7 +162,7 @@ body {
 
 /* End Section Hero */
 
-/* Section Advantages */
+/* Start Section Advantages */
 
 .advantages ul {
 	list-style-type: none;
@@ -212,7 +212,7 @@ body {
 
 /* End Section Advantages */
 
-/* Section Services */
+/* Start Section Services */
 
 .services ul {
 	list-style-type: none;
@@ -264,7 +264,7 @@ body {
 
 /* End Section Services */
 
-/* Section Hotel-search */
+/* Start Section Hotel-search */
 
 .hotel-search {
 	background: #FFFFFF;
@@ -300,7 +300,7 @@ body {
 
 /* End Section Hotel-search */
 
-/* Section Subscribe */
+/* Start Section Subscribe */
 
 .subscribe {
 	text-align: center;
@@ -365,7 +365,7 @@ body {
 
 /* End Main-index */
 
-/* Section Footer */
+/* Start Section Footer */
 
 .page-footer {
 	display: flex;
@@ -432,13 +432,13 @@ body {
 /* End Footer */
 
 
-/* Catalog */
+/* Start Catalog */
 
-	/* Main-inner */
+	/* Start Main-inner */
 
-		/* wrraper-content */
+		/* Start wrraper-content */
 
-			/* Inner-header */
+			/* Start Inner-header */
 
 .wrraper-content {
 	background-color: #000000;
@@ -482,7 +482,7 @@ body {
 
 			/* End Inner-header*/
 
-			/* Catalog-hotel*/
+			/* Start Catalog-hotel*/
 
 .catalog-hotel {
 	padding-bottom: 70px;
@@ -576,7 +576,7 @@ body {
 
 		/* End wrraper-content */
 
-		/* Wrraper-sort */
+		/* Start Wrraper-sort */
 
 .wrraper-sort {
 	display: flex;
@@ -642,7 +642,7 @@ body {
 
 		/*End Wrraper-sort */
 
-		/* Product-list */
+		/* Start Product-list */
 
 .product-list {
 	list-style-type: none;
@@ -691,7 +691,7 @@ body {
 
 		/* End Product-list */
 
-		/* Pagination */
+		/* Start Pagination */
 
 .pagination-list {
 	list-style-type: none;
@@ -733,7 +733,7 @@ body {
 
 		/* End Pagination */
 
-		/* Section Subscribe */
+		/* Start Section Subscribe */
 
 .subscribe-title-color {
 	color: #000000;
@@ -746,4 +746,4 @@ body {
 
 	/* End Main-inner */
 
-	
+	/* Start Inner-footer */
