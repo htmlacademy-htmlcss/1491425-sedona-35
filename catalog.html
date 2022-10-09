@@ -8,8 +8,10 @@
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-
+	<!-- Обёртка для всех блоков -->
 	<div class="content">
+
+		<!-- Header сайта-->
 		<header class="page-header">
 			<a class="logo-link" href="index.html">
 				<img class="logo-image" src="images/header/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
@@ -44,9 +46,13 @@
 			</nav>
 		</header>
 
+		<!-- Главный раздел страницы Catalog-->
 		<main class="main-inner">
 
+			<!-- Обёртка для стилизации-->
 			<div class="wrraper-content">
+
+				<!-- Внутрений Header стр. Catalog-->
 				<header class="inner-header">
 					<h1 class="inner-header-title">Гостиницы Седоны</h1>
 					<ul class="breadcrumbs-list">
@@ -61,6 +67,7 @@
 					</ul>
 				</header>
 
+				<!-- Раздел фильтров-->
 				<section class="catalog-hotel">
 					<h2 class="visually-hidden">Список фильтров по поиску гостиницы</h2>
 
@@ -121,7 +128,8 @@
 				</section>
 			</div>
 
-			<div class="wrraper-sort">
+			<!-- Раздел сортировки-->
+			<div class="catalog-sort">
 				<p class="catalog-result">Найдено гостиниц: 38</p>
 
 				<select class="select-control" aria-label="Сортировка">
@@ -141,6 +149,7 @@
 				</a>
 			</div>
 
+			<!--  Результат поиска -->
 			<ul class="product-list">
 				<li class="product-card">
 					<a class="product-card-link" href="#">
@@ -192,6 +201,7 @@
 				</li>
 			</ul>
 
+			<!-- Пагинация -->
 			<ul class="pagination-list">
 				<li class="pagination-item">
 					<a class="pagination-link pagination-current">1</a>
@@ -213,6 +223,7 @@
 				</li>
 			</ul>
 
+			<!-- Раздел Подписаться -->
 			<section class="subscribe">
 				<h2 class="subscribe-news-title subscribe-title-color">Подпишитесь на рассылку</h2>
 				<p class="subscribe-description subscribe-description-color">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
@@ -224,6 +235,7 @@
 
 		</main>
 
+		<!-- Footer сайта-->
 		<footer class="page-footer">
 			<h2 class="visually-hidden">Контактные данные</h2>
 				  <ul class="footer-social-list">
