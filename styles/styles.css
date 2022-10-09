@@ -16,12 +16,6 @@
 
 /* Общие стили для всей страницы !!! */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
 	font-family: "PT Sans", sans-serif;
 	font-size: 18px;
@@ -309,15 +303,18 @@ body {
 /* Section Subscribe */
 
 .subscribe {
-	background-color: #000000;
-	background-image: url("../images/main/subscribe-background.jpg");
-	background-repeat: no-repeat;
 	text-align: center;
 	color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
 	padding-top: 96px ;
 	padding-bottom: 104px ;
+}
+
+.subscribe-background {
+	background-color: #000000;
+	background-image: url("../images/main/subscribe-background.jpg");
+	background-repeat: no-repeat;
 }
 
 .subscribe-news-title {
@@ -691,3 +688,62 @@ body {
 	text-transform: uppercase;
 	color: #333333;
 }
+
+		/* End Product-list */
+
+		/* Pagination */
+
+.pagination-list {
+	list-style-type: none;
+	margin-top: 0;
+	padding-left: 0;
+	display: flex;
+}
+
+.pagination-item {
+	line-height: 36px;
+}
+
+.pagination-item:not(:last-child) {
+	margin-right: 8px;
+}
+
+.pagination-link {
+	padding: 12px 24px;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #82B3D3;
+	border-radius: 4px;
+}
+
+.pagination-current {
+	color: #000000;
+	background-color: #F2F2F2;
+}
+
+.three-dots {
+	padding: 12px 24px;
+	font-size: 22px;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+}
+
+		/* End Pagination */
+
+		/* Section Subscribe */
+
+.subscribe-title-color {
+	color: #000000;
+}
+
+.subscribe-description-color {
+	color: #333333;
+}
+		/* End Section Subscribe */
+
+	/* End Main-inner */
+
+	
