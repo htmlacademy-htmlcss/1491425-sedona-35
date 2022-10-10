@@ -3,172 +3,154 @@
   <head>
     <meta charset="utf-8">
     <title>SEDONA</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <!-- Обёртка для всех блоков -->
+    <div class="content">
 
-    <!--В некоторых местах я добавил комментарии, свои мысли, после проверки я их удалю, чтобы не захламлять-->
+      <!-- Header сайта-->
+      <header class="page-header">
+          <!-- Лого сайта-->
+          <a class="logo-link" href="index.html">
+            <img class="logo-image" src="images/header/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
+          </a>
+          <!-- Навигация сайта-->
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-current" href="#">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О Седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
 
-    <header class="page-header">
+            <ul class="navigation-user">
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-user-link-search" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-user-link-heart" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                </a>
+              </li>
+            </ul>
+            <a class="button-link button-link-brown" href="#">ХОЧУ СЮДА!</a>
+          </nav>
+      </header>
 
-      <a class="logo-link" href="index.html">
-        <img class="logo-image" src="images/header/header-logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
-      </a>
+      <!-- Главный блок сайта-->
+      <main class="main-index">
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
+        <h1 class="visually-hidden">Добро пожаловать в город Седона!</h1>
 
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
-              <!--Тут у меня возникли сомнения. Сперва я подумал, что это просто декоративная картинка,
-                но потом понял, если вдруг наш файл с css удалится, то пользователь сайта не сможет найти эту кнопку.
-                Поэтому вставляем тут тег img. Еще я думаю тут не стоит прописывать alt (хотя могу ошибаться) т.к.
-                у нас уже указано это слово в классе visually-hidden, иначе скринридер два раза прочитает слово поиск,
-                если я правильно понимаю, но опять же могу ошибаться и готов переделать.
-                p.s. В других местах я тоже не добавлял Alt, если все таки таки, так не стоит делать, то исправлю-->
-              <img src="images/header/header-search.svg" width="18" height="18" alt="">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
-              <img src="images/header/header-heart.svg" width="18" height="17" alt="">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-        </ul>
-        <a class="navigation-link button" href="#">ХОЧУ СЮДА!</a>
+        <!-- Главный баннер сайта-->
+        <section class="hero">
+            <div class="hero-banner">
+              <img class="hero-greetings" src="images/main/main-tagline.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой!">
+              <div class="hero-bottom-detail"></div>
+            </div>
+            <h2 class="hero-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+            <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </section>
+         
+        <!-- Раздел Преимущества-->
+        <section class="advantages">
+            <h2 class="visually-hidden">Преймущества города Седона.</h2>
+            <ul class="advantages-list">
+              <li class="advantage-item advantage-item-blue-style">
+                <h3 class="advantages-subtitle">Настоящий городок</h3>
+                <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <img class="advantages-image" src="images/main/advantages-house.jpg" width="800" height="384" alt="Двухэтажный дом с террасой на втором этаже на фоне величественных гор.">
+              </li>
+              <li class="advantage-item">
+                <h3 class="advantages-subtitle">Небольшая площадь</h3>
+                <p class="advantages-text">Все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="advantage-item">
+                <h3 class="advantages-subtitle">Красивая дорога</h3>
+                <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="advantage-item">
+                <h3 class="advantages-subtitle">Мало туристов</h3>
+                <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+              <li class="advantage-item advantage-item-blue-style">
+                <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
+                <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <img class="advantages-image" src="images/main/advantages-devil-bridge.jpg" width="800" height="384" alt="Мост дьявола — чудо, сотворенное природой в Аризоне.">
+              </li>
+            </ul>
+        </section>
 
-      </nav>
-    </header>
+        <!-- Раздел Услуги-->
+        <section class="services">
+            <ul class="services-list">
+              <li class="services-item services-item-img-house">
+                <h3 class="services-subtitle">Жильё</h3>
+                <p class="services-text">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
+              </li>
+              <li class="services-item services-item-img-food">
+                <h3 class="services-subtitle">Еда</h3>
+                <p class="services-text">Всегда заказывайте <br>топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+              </li>
+              <li class="services-item services-item-img-souvenir">
+                <h3 class="services-subtitle">Сувениры</h3>
+                <p class="services-text">Не только китайского, <br>но и настоящего местного <br>производства!</p>
+              </li>
+            </ul>
+        </section>
 
-    <main class="main-index">
-      <h1 class="visually-hidden">Добро пожаловать в город - Седона!</h1>
-      <img src="images/main/main-banner.jpg" width="1200" height="485" alt="Каньон и сосновые леса штата Аризона.">
-      <!-- Вот тут я снова сомневаюсь, если я правильно понимаю, это не декоративная надпись и поэтому ее стоит
-      подключить через тег img, а потом через css свойство position можем наложить на баннер ? Также я добавил
-      атрибут лэнг, т.к. фраза, которую мы вставляем на англ. Возможно, тут еще понадобится класс...-->
-      <img lang="en" src="images/main/main-tagline.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona because the grand canyon sucks!">
-      <section class="advantages">
-        <h2 class="visually-hidden">Преймущества города Седона.</h2>
-        <p class="advantages-slogan">Седона — небольшой городок в Аризоне,<br>
-          заслуживающий большего!</p>
-        <p class="advantages-sedona">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <!-- Раздел Поиск отеля-->
+        <section class="hotel-search">
+            <h2 class="hotel-search-interested">Заинтересовались?</h2>
+            <p class="hotel-search-text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="hotel-search-link button-link" href="#">Поиск гостиницы в Седоне</a>
+        </section>
 
-        <ul class="advantages-list">
-          <li class="advantage-item">
-            <h3 class="advantages-subtitle">Настоящий городок</h3>
-            <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-image-left" src="images/main/advantages-house.jpg" width="800" height="384" alt="Двухэтажный дом с террасой на втором этаже на фоне величественных гор.">
-          </li>
-          <li class="advantage-item">
-            <h3 class="advantages-subtitle">Небольшая площадь</h3>
-            <p class="advantages-text">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="advantage-item">
-            <h3 class="advantages-subtitle">Красивая дорога</h3>
-            <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantage-item">
-            <h3 class="advantages-subtitle">Мало туристов</h3>
-            <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-          <li class="advantage-item">
-            <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
-            <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages-image-right" src="images/main/advantages-devil-bridge.jpg" width="800" height="384" alt="Мост дьявола — чудо, сотворенное природой в Аризоне.">
-          </li>
-        </ul>
-      </section>
+        <!-- Раздел Подписаться -->
+        <section class="subscribe subscribe-background">
+            <h2 class="subscribe-news-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">
+              <input class="subscribe-email" type="email"  name="subscribe-form" placeholder="Ваш e-mail">
+              <button class="subscribe-button button" type="submit">ПОДПИСАТЬСЯ</button>
+            </form>
+        </section>
+      </main>
 
-      <section class="services">
-        <ul class="services-list">
-          <li class="services-item">
-            <!--Вот тут я снова сомневаюсь в правильности своих мыслей. Смотрю на картинки (домик, еда,
-                сувениры), вроде они декоративные, никакой практической пользы они не несут, если только
-                благодаря своим наличием они помогают пользователям обратить на себя внимание и соответственно,
-                и на текст ниже. Но я на всякий случай добавлю их в разметку, если вдруг это не правильно, то
-                после проверки - удалю.
-                -->
-            <h3 class="services-subtitle">Жильё</h3>
-            <img src="images/main/services-house.svg" width="75" height="72" alt="">
-            <p class="services-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="services-item">
-            <h3 class="services-subtitle">Еда</h3>
-            <img src="images/main/services-food.svg" width="74" height="70" alt="">
-            <p class="services-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="services-item">
-            <h3 class="services-subtitle">Сувениры</h3>
-            <img src="images/main/services-souvenir.svg" width="64" height="76" alt="">
-            <p class="services-text">Не только китайского, но и настоящего местного производства!</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="hotel-search">
-        <h2 class="hotel-search-interested">Заинтересовались?</h2>
-        <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="hotel-search-link button" href="#">Поиск гостиницы в Седоне</a>
-      </section>
-
-      <section class="subscribe">
-        <!-- Тут у блока subscribe есть размытый фон (у меня она лежит в images/main/subscribe-background.jpg), вот
-          тут я думаю точно надо делать через css, наложим
-          его на класс subscribe. Но если ошибаюсь, то переделаю-->
-        <h2 class="subscribe-news-sedona">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">
-          <!-- заметил, что в макете была отключена маленькая иконка в виде календаря (в папке images/main я ее назвал
-            subscribe-calendar), думаю это через css вставляется на класс subscribe-email-->
-          <input class="subscribe-email" type="email"  name="subscribe-form" placeholder="Ваш e-mail">
-          <button class="button" type="submit">ПОДПИСАТЬСЯ</button>
-        </form>
-      </section>
-
-    </main>
-
-    <footer class="page-footer">
-      <h2 class="visually-hidden">Контактные данные</h2>
-			<ul class="footer-social-list">
-				<li class="footer-social-item">
-				  	<a class="social-link" href="https://vk.com/htmlacademy">
-              <img src="images/footer/footer-logo-vkontakte.svg" width="24" height="14" alt="">
-						  <span class="visually-hidden">Vkontakte</span>
-				  	</a>
-				</li>
-				<li class="footer-social-item">
-				  	<a class="social-link" href="https://t.me/htmlacademy ">
-<!--Насколько важно делать точные размеры как в макете, если они не целые, типо height="15.1" ? Или тут
-все индивидуально и если ничего не ломается, то можно округлять-->
-              <img src="images/footer/footer-logo-telegram.svg" width="18" height="15.1" alt="">
-						  <span class="visually-hidden">Telegram</span>
-				  	</a>
-				</li>
-				<li class="footer-social-item">
-				  	<a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images/footer/footer-logo-telegram.svg" width="22" height="17" alt="">
-				  		<span class="visually-hidden">Youtube</span>
-				  	</a>
-				</li>
-			</ul>
-			<a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-			<a class="footer-link-logo" href="https://htmlacademy.ru/">
-				<img class="footer-logo-image" src="images/footer/footer-logo-html-academy.svg" width="114.9" height="32.9" alt="Логотип компании HTML Academy.">
-			</a>
-
-    </footer>
+      <!-- Footer сайта-->
+      <footer class="page-footer">
+          <h2 class="visually-hidden">Контактные данные</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+                <a class="social-link-vkontakte" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Vkontakte</span>
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a class="social-link-telegram" href="https://t.me/htmlacademy ">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+            </li>
+            <li class="footer-social-item">
+                <a class="social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+            </li>
+          </ul>
+          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-link-logo" href="https://htmlacademy.ru/">
+            <img class="footer-logo-image" src="images/footer/footer-logo-html-academy.svg" width="114" height="32" alt="Логотип компании HTML Academy.">
+          </a>
+      </footer>
+    </div>
 
   </body>
 </html>
