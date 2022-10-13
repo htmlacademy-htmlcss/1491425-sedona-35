@@ -53,6 +53,10 @@ body {
     gap: 30px;
 }
 
+.logo-link {
+	z-index: 1;
+}
+
 .logo-image {
 	display: inline-block;
     vertical-align: middle;
@@ -481,12 +485,17 @@ body {
 
 .breadcrumbs-list {
 	display: flex;
-	align-items: center;
-	gap: 10px;
-	list-style-type: none;
-	margin-top: 0;
-	margin-bottom: 40px;
-	padding-left: 0;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+
+.breadcrumbs-item {
+	display: flex;
+    align-items: center;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -498,10 +507,6 @@ body {
 	height: 10px;
 	padding: 5.53px 0.8px;
 	display: inline-block;
-}
-
-.breadcrumbs-item:last-child {
-	align-self: baseline;
 }
 
 .decorative-house-link {
