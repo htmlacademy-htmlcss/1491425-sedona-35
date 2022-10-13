@@ -45,12 +45,39 @@ body {
 
 .page-header {
 	background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    height: 64px;
+    gap: 30px;
+}
+
+.logo-image {
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.navigation {
+	display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
 }
 
 .navigation ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+.navigation-list {
+	display: flex;
+    flex-grow: 1;
+}
+
+.navigation-user {
+	display: flex;
 }
 
 .navigation-link, 
@@ -67,7 +94,12 @@ body {
 }
 
 .navigation-link {
-	padding: 20px 16px;
+	padding: 20px 0px;
+    margin: 0 16px;
+}
+
+.navigation-user-link {
+	vertical-align: middle;
 }
 
 .navigation-link-current {
