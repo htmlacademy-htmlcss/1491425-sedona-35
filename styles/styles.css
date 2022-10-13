@@ -28,7 +28,7 @@ body {
 
 .content {
 	margin: 0 auto;
-	max-width: 1200px;
+	width: 1200px;
 	background-color: #FFFFFF;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
@@ -36,7 +36,6 @@ body {
 .visually-hidden {
 	visibility: hidden;
 	position: absolute;
-	clip: calc(0 0 0 0);
 	width: 1px;
 	height: 1px;
 }
@@ -207,6 +206,8 @@ body {
 /* Start Section Advantages */
 
 .advantages-list {
+	display: flex;
+	flex-wrap: wrap;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -214,10 +215,31 @@ body {
 
 .advantage-item{
 	text-align: center;
+	display: flex;
+}
+
+.advantage-wrrapep {
+	padding: 92px 85px 111px;
+}
+
+.advantage-order {
+	order: 1;
+}
+
+.advantage-item-flex {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 103px 85px 121px;
+	width: 400px;
 }
 
 .advantages-text {
 	color: #333333;
+	margin-top: 0;
+	margin-bottom: 0;
+
 }
 
 .advantages-subtitle {
@@ -225,6 +247,10 @@ body {
 	font-size: 24px;
 	line-height: 28px;
 	text-transform: uppercase;
+	margin-top: 0;
+    margin-bottom: 62px;
+    margin-left: 27.5px;
+    margin-right: 27.5px;
 }
 
 .advantage-item-pale-blue {
@@ -243,10 +269,6 @@ body {
 	color: #FFFFFF;
 }
 
-.advantage-item-blue h3 {
-	margin-top: 0;
-}
-
 /* End Section Advantages */
 
 /* Start Section Services */
@@ -256,11 +278,12 @@ body {
 	padding: 0;
 	margin: 0;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .services-item {
-	width: 230px;
+	width: 400px;
+	box-sizing: border-box;
 	padding: 80px 85px;
 	text-align: center;
 }
