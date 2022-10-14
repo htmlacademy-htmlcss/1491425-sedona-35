@@ -202,6 +202,8 @@ body {
 	color: #000000;
 	margin-top: 0;
 	margin-bottom: 25px;
+	padding-left: 85px;
+	padding-right: 85px;
 	order: 1;
 }
 
@@ -212,6 +214,8 @@ body {
 	color: #333333;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-left: 85px;
+	padding-right: 85px;
 	order: 2;
 }
 
@@ -234,6 +238,11 @@ body {
 
 .advantage-wrrapep {
 	padding: 92px 85px 111px;
+}
+
+.advantages-image {
+	min-height: 100%;
+    object-fit: cover;
 }
 
 .advantage-order {
@@ -338,7 +347,7 @@ body {
 .hotel-search {
 	background: #FFFFFF;
 	text-align: center;
-	padding: 96px 40px;
+	padding: 96px 85px;
 }
 
 .hotel-search-interested {
@@ -375,7 +384,7 @@ body {
 	color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
-	padding: 96px 40px 104px;
+	padding: 96px 85px 104px;
 }
 
 .subscribe-background {
@@ -753,6 +762,10 @@ body {
 }
 
 .product-card {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 300px;
 	padding: 20px;
 }
 
@@ -760,6 +773,7 @@ body {
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 }
 
 .product-card-image {
@@ -813,8 +827,7 @@ body {
 
 .product-card-hotel-rating {
 	margin: 0;
-	padding: 9px 22px 8px 23px;
-    width: 140px;
+	padding: 8px 22px;
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: uppercase;
