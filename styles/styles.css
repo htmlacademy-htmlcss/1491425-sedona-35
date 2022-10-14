@@ -16,6 +16,10 @@
 
 /* Общие стили для всей страницы !!! */
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: "PT Sans", sans-serif;
 	font-size: 18px;
@@ -24,13 +28,19 @@ body {
 	color: #000000;
 	background-color: #F2F2F2;
 	margin: 0;
+	display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
-.content {
+.container {
 	margin: 0 auto;
 	width: 1200px;
 	background-color: #FFFFFF;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .visually-hidden {
@@ -46,14 +56,13 @@ body {
 	background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0 70px;
-    height: 64px;
     gap: 30px;
 }
 
 .logo-link {
 	z-index: 1;
+	margin-bottom: -4px;
 }
 
 .logo-image {
@@ -76,6 +85,7 @@ body {
 
 .navigation-list {
 	display: flex;
+	flex-wrap: wrap;
     flex-grow: 1;
 }
 
@@ -146,6 +156,10 @@ body {
 /* End Header */
 
 /* Start Main-index */
+
+.main-index {
+	flex-grow: 1;
+}
 
 /* Start Section Hero */
 
@@ -490,6 +504,10 @@ body {
 
 			/* Start Inner-header */
 
+.main-inner {
+	flex-grow: 1;
+}
+
 .wrraper-content {
 	background-color: #354751;
 	background-image: url("../images/catalog/background-catalog-filter.jpg");
@@ -584,6 +602,9 @@ body {
 .catalog-filter-infrastructure,
 .catalog-filter-housing-type {
 	border: none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
 }
 
 .catalog-filter-title {
@@ -591,11 +612,13 @@ body {
 	font-size: 20px;
 	line-height: 24px;
 	text-transform: capitalize;
+	margin-bottom: 32px;
 }
 
 .catalog-filter-list {
 	list-style-type: none;
 	margin-top: 0;
+	margin-bottom: 0;
 	padding-left: 0;
 }
 
@@ -635,33 +658,49 @@ body {
 
 		/* End wrraper-content */
 
+		/* Start wrraper-products */
+
+.wrraper-products {
+	padding: 50px 70px 60px;
+	background-color: #FFFFFF;
+}
+
+
 		/* Start Catalog-sort */
 
 .catalog-sort {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 40px;
+	box-sizing: border-box;
 }
 
 .catalog-result {
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 36px;
-	text-transform: uppercase;
-	margin-top: 0;
-	margin-bottom: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+	flex-grow: 1;
 }
 
 .select-control {
-	font-family: inherit;
-	font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
 	color: #333333;
 	padding: 14px 20px;
 	width: 292px;
 	border: 2px solid #E5E5E5;
 	border-radius: 4px;
+}
+
+.wrraper-sort-button {
+	display: flex;
+    align-items: center;
 }
 
 .sort-button {
@@ -670,6 +709,7 @@ body {
 	height: 44px;
 	border: 2px solid #E5E5E5;
 	border-radius: 4px;
+	box-sizing: border-box;
 }
 
 .sort-button:not(:last-child){
@@ -705,11 +745,26 @@ body {
 .product-list {
 	list-style-type: none;
 	margin-top: 0;
+	margin-bottom: 80px;
 	padding-left: 0;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.product-card {
+	padding: 20px;
 }
 
 .product-card-link {
 	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.product-card-image {
+	display: block;
+	margin-bottom: 16px;
 }
 
 .product-card-subtitle {
@@ -717,17 +772,28 @@ body {
 	font-size: 24px;
 	line-height: 28px;
 	color: #000000;
+	margin-top: 0;
+	margin-bottom: 16px;
+	order: 1;
 }
 
 .product-short-text {
 	margin-top: 0;
+	margin-bottom: 16px;
 	color: #333333;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrraper-product-button-link {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
 }
 
 .button-link-more {
 	background-color: #756157;
 	padding: 8px 26px;
-	margin-right: 16px;
 }
 
 .button-link-favorites {
@@ -739,12 +805,23 @@ body {
 	background-color: #7DB54F;
 }
 
+.wrraper-product-rating {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .product-card-hotel-rating {
-	margin-top: 0;
+	margin: 0;
+	padding: 9px 22px 8px 23px;
+    width: 140px;
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #333333;
+	box-sizing: border-box;
+    background-color: #F2F2F2;
+    border-radius: 4px;
 }
 
 		/* End Product-list */
@@ -756,6 +833,7 @@ body {
 	gap: 8px;
 	list-style-type: none;
 	margin-top: 0;
+	margin-bottom: 0;
 	padding-left: 0;
 }
 
@@ -763,10 +841,6 @@ body {
 	line-height: 36px;
 	text-align: center;
 }
-
-/* .pagination-item:not(:last-child) {
-	margin-right: 8px;
-} */
 
 .pagination-link {
 	display: flex;
@@ -801,6 +875,8 @@ body {
 }
 
 		/* End Pagination */
+
+		/* End wrraper-products */
 
 		/* Start Section Subscribe */
 
