@@ -16,6 +16,10 @@
 
 /* Общие стили для всей страницы !!! */
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: "PT Sans", sans-serif;
 	font-size: 18px;
@@ -24,19 +28,24 @@ body {
 	color: #000000;
 	background-color: #F2F2F2;
 	margin: 0;
+	display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
-.content {
+.container {
 	margin: 0 auto;
-	max-width: 1200px;
+	width: 1200px;
 	background-color: #FFFFFF;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .visually-hidden {
 	visibility: hidden;
 	position: absolute;
-	clip: calc(0 0 0 0);
 	width: 1px;
 	height: 1px;
 }
@@ -45,12 +54,43 @@ body {
 
 .page-header {
 	background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    gap: 30px;
+}
+
+.logo-link {
+	z-index: 1;
+	margin-bottom: -4px;
+}
+
+.logo-image {
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.navigation {
+	display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
 }
 
 .navigation ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+.navigation-list {
+	display: flex;
+	flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.navigation-user {
+	display: flex;
 }
 
 .navigation-link, 
@@ -67,7 +107,12 @@ body {
 }
 
 .navigation-link {
-	padding: 20px 16px;
+	padding: 20px 0px;
+    margin: 0 16px;
+}
+
+.navigation-user-link {
+	vertical-align: middle;
 }
 
 .navigation-link-current {
@@ -112,35 +157,41 @@ body {
 
 /* Start Main-index */
 
+.main-index {
+	flex-grow: 1;
+}
+
 /* Start Section Hero */
 
 .hero {
+	display: flex;
+    flex-direction: column;
 	font-family: 'PT Sans', sans-serif;
 	text-align: center;
+	padding-bottom: 90px;
 }
 
-/* У меня была мысль наложить на один класс два фона через background-image, но позавчера Николай Шабалин (на ретроспективе) почему то, 
-сказал, что такая реализация для Седоны, может привести, к не защите проекта, а так способ классный */
-
 .hero-banner {
-	display: block;
-	width: 1200px;
 	padding-top: 51px;
 	margin-bottom: 69px;
-	background-color: #000000;
+	background-color: #34576b;
 	background-image: url("../images/main/main-banner.jpg");
 	background-repeat: no-repeat;
 }
 
-.hero-bottom-detail {
-	height: 57px;
+.hero-banner::after {
+	content: "";
 	background-image: url("../images/main/main-bottom-detail.svg");
 	background-repeat: no-repeat;
-	background-position: left bottom;
+	background-position: center bottom;
+	background-size: cover;
+	width: 100%;
+	height: 57px;
+	display: block;
 }
 
 .hero-greetings {
-	margin-bottom: 21px;
+	margin-bottom: 20px;
 }
 
 .hero-title {
@@ -149,7 +200,11 @@ body {
 	line-height: 36px;
 	text-transform: uppercase;
 	color: #000000;
+	margin-top: 0;
 	margin-bottom: 25px;
+	padding-left: 85px;
+	padding-right: 85px;
+	order: 1;
 }
 
 .hero-text {
@@ -157,14 +212,20 @@ body {
 	font-size: 22px;
 	line-height: 26px;
 	color: #333333;
-	margin-bottom: 90px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 85px;
+	padding-right: 85px;
+	order: 2;
 }
 
 /* End Section Hero */
 
 /* Start Section Advantages */
 
-.advantages ul {
+.advantages-list {
+	display: flex;
+	flex-wrap: wrap;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -172,41 +233,62 @@ body {
 
 .advantage-item{
 	text-align: center;
+	display: flex;
 }
 
-.advantage-item p {
+.advantage-wrrapep {
+	padding: 92px 85px 111px;
+}
+
+.advantages-image {
+	min-height: 100%;
+    object-fit: cover;
+}
+
+.advantage-order {
+	order: 1;
+}
+
+.advantage-item-flex {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 103px 85px 121px;
+	width: 400px;
+}
+
+.advantages-text {
 	color: #333333;
+	margin-top: 0;
+	margin-bottom: 0;
+
 }
 
-.advantage-item h3 {
+.advantages-subtitle {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
 	text-transform: uppercase;
+	margin-top: 0;
+    margin-bottom: 62px;
+    margin-left: 27.5px;
+    margin-right: 27.5px;
 }
 
-.advantages-list .advantage-item:nth-child(2) {
+.advantage-item-pale-blue {
 	background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list .advantage-item:nth-child(3) {
+.advantage-item-light-blue {
 	background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-list .advantage-item:nth-child(4) {
-	background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantage-item-blue-style {
+.advantage-item-blue {
 	background-color: #82B3D3;
 }
 
-.advantage-item-blue-style h3 {
-	color: #FFFFFF;
-	margin-top: 0;
-}
-
-.advantage-item-blue-style p {
+.advantage-item-blue * {
 	color: #FFFFFF;
 }
 
@@ -214,28 +296,20 @@ body {
 
 /* Start Section Services */
 
-.services ul {
+.services-list {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	display: flex;
-	justify-content: space-between;
-}
-
-.services-item:not(.services-item:nth-child(2)) {
-	/* Вот тут я визуально не могу увидеть, есть ли фон или нет, в макете прописан, а так суслика не видено */
-	background-color: rgba(131, 179, 211, 0.12);
+	flex-wrap: wrap;
 }
 
 .services-item {
-	width: 230px;
-	height: 384px;
-	padding: 80px 85px 0;
+	width: 400px;
+	box-sizing: border-box;
+	padding: 80px 85px;
 	text-align: center;
 }
-
-/* тут я не смог понять, как у псевдоэлемента сделать отступ вниз. Пришлось классу services-subtitle, что ниже расположен, сделать margin-top 
-хотя была идея сделать все по правилам, то есть сделать отступы только margin-bottom у элементов*/
 
 .services-item-img-house::before {
 	content: url("../images/main/services-house.svg");
@@ -247,6 +321,10 @@ body {
 
 .services-item-img-souvenir::before {
 	content: url("../images/main/services-souvenir.svg");
+}
+
+.services-item-pale-blue {
+	background-color: rgba(131, 179, 211, 0.12);
 }
 
 .services-subtitle {
@@ -269,8 +347,7 @@ body {
 .hotel-search {
 	background: #FFFFFF;
 	text-align: center;
-	padding-top: 96px;
-	padding-bottom: 96px;
+	padding: 96px 85px;
 }
 
 .hotel-search-interested {
@@ -307,8 +384,7 @@ body {
 	color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
-	padding-top: 96px ;
-	padding-bottom: 104px ;
+	padding: 96px 85px 104px;
 }
 
 .subscribe-background {
@@ -371,14 +447,11 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 120px;
-	padding: 0 70px;
+	padding: 40px 70px 30px;
 }
 
-.page-footer ul {
+.footer-social-list {
 	list-style-type: none;
-	width: 142px;
-	height: 40px;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -386,8 +459,6 @@ body {
 
 .footer-social-item {
 	text-align: center;
-	width: 48px;
-	height: 40px;
 	display: flex;
 	align-items: center;
 }
@@ -397,8 +468,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center ;
 	width: 24px;
-	height: 14px;
-	padding: 0 10px;
+	padding: 10px;
 }
 
 .social-link-telegram {
@@ -406,8 +476,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center ;
 	width: 18px;
-	height: 15px;
-	padding: 1px 10px;
+	padding: 10px;
 }
 
 .social-link-youtube {
@@ -415,18 +484,22 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 22px;
-	height: 17px;
-	padding: 0 10px;
+	padding: 10px;
 }
 
 .footer-phone {
-	font-family: "PT Sans" sans-serif;
+	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
 	font-size: 40px;
 	line-height: 40px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000000;
+	
+}
+
+.footer-logo-image {
+	vertical-align: middle;
 }
 
 /* End Footer */
@@ -440,10 +513,15 @@ body {
 
 			/* Start Inner-header */
 
+.main-inner {
+	flex-grow: 1;
+}
+
 .wrraper-content {
-	background-color: #000000;
+	background-color: #354751;
 	background-image: url("../images/catalog/background-catalog-filter.jpg");
 	background-repeat: no-repeat;
+	padding: 35px 70px 70px;
 	color: #FFFFFF;
 }
 
@@ -457,23 +535,38 @@ body {
 
 .breadcrumbs-list {
 	display: flex;
-	align-items: center;
-	gap: 10px;
-	list-style-type: none;
-	margin-top: 0;
-	margin-bottom: 40px;
-	padding-left: 0;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+
+.breadcrumbs-item {
+	display: flex;
+    align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+	content: "";
+	background-image: url("../images/catalog/arrow-right.svg");
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 7px;
+	height: 10px;
+	padding: 5.53px 0.8px;
+	display: inline-block;
 }
 
 .decorative-house-link {
-	padding: 3px 33px 3px 0;
-/* Тут не совсем понимаю, "стрелочка вправо является ли часть ссылки? или же ее лучше реализовать
-через псевдоэлемент ::before" ? */
-	background-image: 
-		url("../images/catalog/breadcrumbs-house.svg"),
-		url("../images/catalog/arrow-right.svg");
-	background-repeat: no-repeat, no-repeat;
-	background-position: left center, right center;
+	background-image: url("../images/catalog/breadcrumbs-house.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 12px;
+    height: 12px;
+	padding: 3.5px 6px 5.5px 0.5px;
+    display: inline-block;
 }
 
 .breadcrumbs-link {
@@ -483,10 +576,6 @@ body {
 			/* End Inner-header*/
 
 			/* Start Catalog-hotel*/
-
-.catalog-hotel {
-	padding-bottom: 70px;
-}
 
 .catalog-filter {
 	display: grid;
@@ -522,6 +611,9 @@ body {
 .catalog-filter-infrastructure,
 .catalog-filter-housing-type {
 	border: none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
 }
 
 .catalog-filter-title {
@@ -529,11 +621,13 @@ body {
 	font-size: 20px;
 	line-height: 24px;
 	text-transform: capitalize;
+	margin-bottom: 32px;
 }
 
 .catalog-filter-list {
 	list-style-type: none;
 	margin-top: 0;
+	margin-bottom: 0;
 	padding-left: 0;
 }
 
@@ -547,10 +641,7 @@ body {
 }
 
 .button-catalog {
-	display: inline;
     padding: 8px 50px;
-    width: 191px;
-    height: 36px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -576,28 +667,39 @@ body {
 
 		/* End wrraper-content */
 
+		/* Start wrraper-products */
+
+.wrraper-products {
+	padding: 50px 70px 60px;
+	background-color: #FFFFFF;
+}
+
+
 		/* Start Catalog-sort */
 
 .catalog-sort {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 40px;
+	box-sizing: border-box;
 }
 
 .catalog-result {
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 36px;
-	text-transform: uppercase;
-	margin-top: 0;
-	margin-bottom: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+	flex-grow: 1;
 }
 
 .select-control {
-	font-family: inherit;
-	font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
 	color: #333333;
 	padding: 14px 20px;
 	width: 292px;
@@ -605,13 +707,18 @@ body {
 	border-radius: 4px;
 }
 
+.wrraper-sort-button {
+	display: flex;
+    align-items: center;
+}
+
 .sort-button {
 	display: inline-block;
-	padding: 14px 12px;
+	width: 44px;
+	height: 44px;
 	border: 2px solid #E5E5E5;
 	border-radius: 4px;
-	width: 48px;
-	height: 48px;
+	box-sizing: border-box;
 }
 
 .sort-button:not(:last-child){
@@ -647,11 +754,31 @@ body {
 .product-list {
 	list-style-type: none;
 	margin-top: 0;
+	margin-bottom: 80px;
 	padding-left: 0;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.product-card {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 300px;
+	padding: 20px;
 }
 
 .product-card-link {
 	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.product-card-image {
+	display: block;
+	margin-bottom: 16px;
 }
 
 .product-card-subtitle {
@@ -659,17 +786,28 @@ body {
 	font-size: 24px;
 	line-height: 28px;
 	color: #000000;
+	margin-top: 0;
+	margin-bottom: 16px;
+	order: 1;
 }
 
 .product-short-text {
 	margin-top: 0;
+	margin-bottom: 16px;
 	color: #333333;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrraper-product-button-link {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
 }
 
 .button-link-more {
 	background-color: #756157;
 	padding: 8px 26px;
-	margin-right: 16px;
 }
 
 .button-link-favorites {
@@ -681,12 +819,22 @@ body {
 	background-color: #7DB54F;
 }
 
+.wrraper-product-rating {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .product-card-hotel-rating {
-	margin-top: 0;
+	margin: 0;
+	padding: 8px 22px;
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #333333;
+	box-sizing: border-box;
+    background-color: #F2F2F2;
+    border-radius: 4px;
 }
 
 		/* End Product-list */
@@ -694,29 +842,32 @@ body {
 		/* Start Pagination */
 
 .pagination-list {
+	display: flex;
+	gap: 8px;
 	list-style-type: none;
 	margin-top: 0;
+	margin-bottom: 0;
 	padding-left: 0;
-	display: flex;
 }
 
 .pagination-item {
 	line-height: 36px;
-}
-
-.pagination-item:not(:last-child) {
-	margin-right: 8px;
+	text-align: center;
 }
 
 .pagination-link {
-	padding: 12px 24px;
-	font-weight: 700;
-	font-size: 20px;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #FFFFFF;
-	background: #82B3D3;
-	border-radius: 4px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #82B3D3;
+    border-radius: 4px;
 }
 
 .pagination-current {
@@ -725,13 +876,20 @@ body {
 }
 
 .three-dots {
-	padding: 12px 24px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
 	font-size: 22px;
+	line-height: 26px;
 	background-color: #FFFFFF;
 	border-radius: 4px;
 }
 
 		/* End Pagination */
+
+		/* End wrraper-products */
 
 		/* Start Section Subscribe */
 
