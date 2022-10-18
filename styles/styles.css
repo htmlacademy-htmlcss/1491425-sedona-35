@@ -246,6 +246,17 @@ body {
 
 .advantage-wrrapep {
 	padding: 92px 85px 111px;
+	position: relative;
+}
+
+.advantage-wrrapep::after {
+	content: "";
+    width: 60px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: 170px;
+    top: 178px;
 }
 
 .advantages-image {
@@ -264,6 +275,17 @@ body {
 	flex-wrap: wrap;
 	padding: 103px 85px 121px;
 	width: 400px;
+	position: relative;
+}
+
+.advantage-item-flex::after  {
+	content: "";
+    width: 60px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 170px;
+    top: 189px;
 }
 
 .advantages-text {
