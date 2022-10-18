@@ -81,14 +81,18 @@ body {
     gap: 20px;
 }
 
+.navigation-list, 
+.navigation-user {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 .navigation-list {
 	width: 600px;
 	display: flex;
 	flex-wrap: wrap;
     flex-grow: 1;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
 }
 
 .navigation-user {
