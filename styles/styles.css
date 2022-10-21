@@ -587,6 +587,7 @@ body {
 	width: 7px;
 	height: 10px;
 	padding: 5.53px 0.8px;
+  margin-left: 10px;
 	display: inline-block;
 }
 
@@ -596,7 +597,7 @@ body {
   background-position: left;
   width: 12px;
   height: 12px;
-	padding: 3.5px 6px 5.5px 0.5px;
+	padding: 3.5px 0 5.5px 0.5px;
   display: inline-block;
 }
 
@@ -803,29 +804,37 @@ body {
 	margin-top: 0;
 	margin-bottom: 80px;
 	padding-left: 0;
-	display: flex;
-	gap: 20px;
-	flex-wrap: wrap;
+	display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
 }
 
 .product-card {
-	display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    max-width: 300px;
-	padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 300px;
+  padding: 20px;
 }
 
 .product-card-link {
-	grid-area: 1 / 1 / 2 / 3;
+	grid-area: 1 / 1 / 2 / -1;
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 }
 
+/* Данная обёртка решает проблему переполнение заголовка  */
+.wrraper-product-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  align-content: end;
+}
+
 .product-card-image {
 	display: block;
+  object-fit: contain;
 	margin-bottom: 16px;
 }
 
@@ -839,22 +848,29 @@ body {
 	order: 1;
 }
 
-.product-short-text {
-	grid-area: 2 / 1 / 3 / 3;
-    align-self: start;
+.product-short-text-hotel{
+  justify-self: start;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.product-short-text-price{
+  justify-self: end;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.product-short-text-hotel,
+.product-short-text-price {
 	margin-top: 0;
 	margin-bottom: 16px;
 	color: #333333;
-	display: flex;
-	justify-content: space-between;
 }
 
 .button-link-more {
 	background-color: #756157;
 	padding: 8px 26px;
 	grid-area: 3 / 1 / 4 / 2;
-    align-self: start;
-    margin-bottom: 16px;
+  align-self: start;
+  margin-bottom: 16px;
 }
 
 .button-link-favorites {
