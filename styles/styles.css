@@ -552,6 +552,10 @@ body {
 	color: #FFFFFF;
 }
 
+.inner-header {
+  margin-bottom: 40px;
+}
+
 .inner-header-title {
 	font-weight: 700;
 	font-size: 60px;
@@ -566,7 +570,6 @@ body {
   gap: 10px;
   list-style-type: none;
   margin-top: 0;
-  margin-bottom: 40px;
   padding-left: 0;
 }
 
