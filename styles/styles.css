@@ -548,6 +548,7 @@ body {
 	background-color: #354751;
 	background-image: url("../images/catalog/background-catalog-filter.jpg");
 	background-repeat: no-repeat;
+  background-size: cover;
 	padding: 35px 70px 70px;
 	color: #FFFFFF;
 }
@@ -660,6 +661,7 @@ body {
 	border: none;
 	margin: 0;
 	padding: 0;
+  word-break: break-all;
 }
 
 .catalog-filter-title {
