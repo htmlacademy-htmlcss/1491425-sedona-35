@@ -255,7 +255,7 @@ body {
 
 .advantages-image {
 	min-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .advantage-order {
