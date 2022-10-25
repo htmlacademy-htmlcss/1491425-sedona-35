@@ -167,8 +167,22 @@ body {
 }
 
 .button-link-brown {
-	background: #756157;
+	background-color: #756157;
 	padding: 8px 34px;
+}
+
+.button-link-brown:hover {
+	background-color: #615048;
+}
+
+.button-link-brown:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
+
+.button-link-brown:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* End Header */
@@ -418,6 +432,20 @@ body {
 	padding: 8px 50px;
 }
 
+.hotel-search-link:hover {
+	background-color: #615048;
+}
+
+.hotel-search-link:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
+
+.hotel-search-link:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /* End Section Hotel-search */
 
 /* Start Section Subscribe */
@@ -467,6 +495,15 @@ body {
 	background-color: #F2F2F2;
 	border-radius: 4px 0 0 4px;
 	border: none;
+  color: #000000;
+}
+
+.subscribe-email::placeholder {
+  opacity: 0.6;
+}
+
+.subscribe-email {
+  outline: none;
 }
 
 .subscribe-button {
