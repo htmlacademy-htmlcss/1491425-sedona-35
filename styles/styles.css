@@ -1052,6 +1052,20 @@ body {
   margin-bottom: 16px;
 }
 
+.button-link-more:hover {
+	background-color: #615048;
+}
+
+.button-link-more:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
+
+.button-link-more:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-link-favorites {
 	background-color: #82B3D3;
 	padding: 8px 20px;
@@ -1060,8 +1074,36 @@ body {
     margin-bottom: 16px;
 }
 
+.button-link-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.button-link-favorites:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.button-link-favorites:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-link-favorites-active {
 	background-color: #7DB54F;
+}
+
+.button-link-favorites-active:hover {
+  background-color: #6C9E42;
+}
+
+.button-link-favorites-active:focus-visible {
+  background-color: #6C9E42;
+  outline: none;
+}
+
+.button-link-favorites-active:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .product-star-image {
