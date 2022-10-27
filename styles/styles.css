@@ -545,6 +545,10 @@ body {
   color: #FFFFFF;
 }
 
+.subscribe-button:disabled:hover {
+  cursor: default;
+}
+
 /* End Section Subscribe */
 
 /* End Main-index */
