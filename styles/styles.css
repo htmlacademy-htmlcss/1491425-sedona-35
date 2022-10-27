@@ -1111,6 +1111,23 @@ body {
 	grid-area: 4 / 1 / 5 / 2;
   justify-self: start;
   align-self: center;
+  margin: 0;
+  background-image: url("../images/catalog/rating-star.svg");
+  background-repeat: repeat-x;
+  background-position: left center;
+  height: 17px;
+}
+
+.rating-star-two {
+  width: 36px;
+}
+
+.rating-star-three {
+  width: 54px;
+}
+
+.rating-star-four {
+  width: 72px;
 }
 
 .product-card-hotel-rating {
