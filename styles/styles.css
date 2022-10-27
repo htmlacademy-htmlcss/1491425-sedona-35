@@ -761,16 +761,60 @@ body {
 }
 
 .apply-button {
-	background: #82B3D3;
+	background-color: #82B3D3;
 	padding: 8px 50px;
   align-self: end;
   grid-area: 1 / 2 / 2/ 3;
+}
+
+.apply-button:hover {
+  background-color: #68A2CA;
+}
+
+.apply-button:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.apply-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.apply-button:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
+}
+
+.apply-button:disabled:hover {
+  background-color: #E5E5E5;
+  cursor: default;
 }
 
 .reset-button {
 	background-color: transparent;
 	padding: 8px 57.5px;
   grid-area: 2 / 2 / 3/ 3;
+}
+
+.reset-button:hover {
+  opacity: 0.6;
+}
+
+.reset-button:focus-visible {
+  outline: 3px solid #83B3D3;;
+}
+
+.reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.reset-button:disabled {
+  opacity: 0.1;
+}
+
+.reset-button:disabled:hover {
+  cursor: default;
 }
 
 .catalog-filter-infrastructure,
