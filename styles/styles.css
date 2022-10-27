@@ -876,7 +876,7 @@ body {
 
 .wrraper-sort-button {
 	display: flex;
-    align-items: center;
+  align-items: center;
 }
 
 .sort-button {
@@ -886,6 +886,19 @@ body {
 	border: 2px solid #E5E5E5;
 	border-radius: 4px;
 	box-sizing: border-box;
+}
+
+.sort-button:hover {
+  border: 2px solid #000000;
+}
+
+.sort-button:focus-visible {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.sort-button:active {
+  border: 2px solid #000000;
 }
 
 .sort-button:not(:last-child){
@@ -908,10 +921,6 @@ body {
 	background-image: url("../images/catalog/catalog-sort-list.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-.button-active {
-	border: 2px solid #000000;
 }
 
 		/*End Catalog-sort */
