@@ -496,12 +496,22 @@ body {
 	border-radius: 4px 0 0 4px;
 	border: none;
   outline: none;
-  color: #000000;
 }
 
 .subscribe-email::placeholder {
+  color: #000000;
   opacity: 0.6;
 }
+
+/* .subscribe-email:hover {
+  background-color: #E6E6E6;
+}
+
+.subscribe-email:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+} */
+
 
 .subscribe-button {
   font-family: "PT Sans", sans-serif;
@@ -514,6 +524,25 @@ body {
 	border-radius: 0 4px 4px 0;
 	border: none;
 	cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscribe-button:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.subscribe-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 /* End Section Subscribe */
@@ -538,19 +567,29 @@ body {
     width: 337px;
 }
 
-.footer-social-item {
-	display: flex;
-	align-items: center;
-}
-
 .social-link {
   min-width: 47px;
   min-height: 40px;
-  background-repeat: no-repeat;
-	background-position: center ;
+  display: flex;
+	align-items: center;
+  justify-content: center;
+  color: #83B3D3;
+  outline: none;
 }
 
-.social-link-vkontakte {
+.social-icon:hover {
+  fill: #68A2CA;
+}
+
+.social-link:focus-visible .social-icon {
+  fill: #68A2CA;
+}
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+/* .social-link-vkontakte {
 	background-image: url("../images/footer/footer-social-vkontakte.svg");
 }
 
@@ -560,7 +599,7 @@ body {
 
 .social-link-youtube {
 	background-image: url("../images/footer/footer-social-youtube.svg");
-}
+} */
 
 .footer-phone {
 	font-family: "PT Sans", sans-serif;
@@ -573,8 +612,38 @@ body {
   margin-right: auto;
 }
 
-.footer-logo-image {
-	vertical-align: middle;
+.footer-phone:hover {
+  color: #756157;
+}
+
+.footer-phone:focus-visible {
+  outline: none;
+  color: #756157;
+}
+
+.footer-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-link-logo {
+  outline: none;
+  color: #000000;
+}
+
+.logo-html-academy {
+  vertical-align: middle;
+}
+
+.logo-html-academy:hover {
+  fill: #756157;
+}
+
+.footer-link-logo:focus-visible .logo-html-academy {
+  fill: #756157;
+}
+
+.logo-html-academy:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* End Footer */
