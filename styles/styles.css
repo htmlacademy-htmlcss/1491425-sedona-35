@@ -1107,10 +1107,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.product-star-image {
+.product-rating-star {
 	grid-area: 4 / 1 / 5 / 2;
-    justify-self: start;
-    align-self: center;
+  justify-self: start;
+  align-self: center;
 }
 
 .product-card-hotel-rating {
