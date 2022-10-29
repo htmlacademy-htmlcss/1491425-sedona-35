@@ -196,7 +196,6 @@ body {
 
 .button-link-brown:focus-visible {
   background-color: #615048;
-  outline: none;
 }
 
 .button-link-brown:active {
@@ -457,7 +456,6 @@ body {
 
 .hotel-search-link:focus-visible {
   background-color: #615048;
-  outline: none;
 }
 
 .hotel-search-link:active {
@@ -513,7 +511,7 @@ body {
 	padding: 12px 20px;
 	background-color: #F2F2F2;
 	border-radius: 4px 0 0 4px;
-	border: none;
+  border: none;
   outline: none;
 }
 
@@ -522,14 +520,21 @@ body {
   opacity: 0.6;
 }
 
-/* .subscribe-email:hover {
+.subscribe-email:hover {
   background-color: #E6E6E6;
 }
 
 .subscribe-email:focus-visible {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
-} */
+  outline-offset: -3px;
+}
+
+.subscribe-email:active {
+  z-index: 1;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
 
 
 .subscribe-button {
@@ -551,7 +556,6 @@ body {
 
 .subscribe-button:focus-visible {
   background-color: #68A2CA;
-  outline: none;
 }
 
 .subscribe-button:active {
@@ -597,7 +601,6 @@ body {
 	align-items: center;
   justify-content: center;
   color: #83B3D3;
-  outline: none;
 }
 
 .social-icon:hover {
@@ -640,7 +643,6 @@ body {
 }
 
 .footer-phone:focus-visible {
-  outline: none;
   color: #756157;
 }
 
@@ -649,7 +651,6 @@ body {
 }
 
 .footer-link-logo {
-  outline: none;
   color: #000000;
 }
 
@@ -796,7 +797,6 @@ body {
 
 .apply-button:focus-visible {
   background-color: #68A2CA;
-  outline: none;
 }
 
 .apply-button:active {
@@ -946,8 +946,7 @@ body {
 }
 
 .select-control:focus-visible {
-  border: 2px solid #68A2CA;
-  outline: none;
+  outline: 2px solid #68A2CA;
 }
 
 .select-control:active {
@@ -1100,7 +1099,6 @@ body {
 
 .button-link-more:focus-visible {
   background-color: #615048;
-  outline: none;
 }
 
 .button-link-more:active {
@@ -1122,7 +1120,6 @@ body {
 
 .button-link-favorites:focus-visible {
   background-color: #68A2CA;
-  outline: none;
 }
 
 .button-link-favorites:active {
@@ -1140,7 +1137,6 @@ body {
 
 .button-link-favorites-active:focus-visible {
   background-color: #6C9E42;
-  outline: none;
 }
 
 .button-link-favorites-active:active {
@@ -1213,6 +1209,7 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   background: #82B3D3;
+  border: 1px solid #82B3D3;
   border-radius: 4px;
 }
 
@@ -1222,7 +1219,6 @@ body {
 
 .pagination-link:focus-visible {
   background-color: #68A2CA;
-  outline: none;
 }
 
 .pagination-link:active {
@@ -1236,6 +1232,8 @@ body {
 .pagination-current:active {
 	color: #000000;
 	background-color: #F2F2F2;
+  border: none;
+  outline: none;
 }
 
 .three-dots {
