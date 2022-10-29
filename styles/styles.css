@@ -1133,7 +1133,6 @@ body {
   margin: 0;
   background-image: url("../images/catalog/rating-star.svg");
   background-repeat: space;
-  background-position: left center;
   height: 17px;
 }
 
