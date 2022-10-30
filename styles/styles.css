@@ -970,7 +970,7 @@ body {
 	display: inline-block;
 	width: 44px;
 	height: 44px;
-	outline: 2px solid #E5E5E5;
+	border: 2px solid #E5E5E5;
 	border-radius: 4px;
 	box-sizing: border-box;
   background-repeat: no-repeat;
