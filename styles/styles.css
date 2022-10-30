@@ -145,8 +145,7 @@ body {
   position: relative;
 }
 
-.navigation-user-link-heart::before {
-  content: "12";
+.navigation-user-number-items {
   display: block;
   width: 20px;
   height: 20px;
@@ -156,11 +155,11 @@ body {
   font-weight: 400;
   font-size: 10px;
   line-height: 20px;
+  color: #FFFFFF;
+  text-align: center;
   position: absolute;
   left: 20px;
   top: 11px;
-  color: #FFFFFF;
-  text-align: center;
 }
 
 .navigation-user-link-search,
