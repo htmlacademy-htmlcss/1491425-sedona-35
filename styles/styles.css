@@ -973,6 +973,8 @@ body {
 	outline: 2px solid #E5E5E5;
 	border-radius: 4px;
 	box-sizing: border-box;
+  background-repeat: no-repeat;
+	background-position: center;
 }
 
 .sort-button:hover {
@@ -998,20 +1000,14 @@ body {
 
 .sort-button-cards {
 	background-image: url("../images/catalog/catalog-sort-cards.svg");
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .sort-button-slideshow {
 	background-image: url("../images/catalog/catalog-sort-slideshow.svg");
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .sort-button-list {
 	background-image: url("../images/catalog/catalog-sort-list.svg");
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 		/*End Catalog-sort */
