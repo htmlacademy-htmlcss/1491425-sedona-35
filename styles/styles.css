@@ -1149,6 +1149,10 @@ body {
   height: 17px;
 }
 
+.rating-star-one {
+  width: 18px;
+}
+
 .rating-star-two {
   width: 42px;
 }
@@ -1159,6 +1163,10 @@ body {
 
 .rating-star-four {
   width: 89px;
+}
+
+.rating-star-five {
+  width: 105px;
 }
 
 .product-card-hotel-rating {
