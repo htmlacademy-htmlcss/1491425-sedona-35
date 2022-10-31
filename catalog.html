@@ -74,7 +74,6 @@
 
 					<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
 
-            <div class="wrraper-catalog-filter-left">
               <fieldset class="catalog-filter-infrastructure">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
@@ -110,29 +109,33 @@
                   </li>
                 </ul>
               </fieldset>
-            </div>
-
-            <div class="wrraper-catalog-filter-right">
 
               <fieldset class="catalog-filter-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
                 <div class="range">
-                  <!-- <div class="range-wrrapers-inputs">
-                    <label for="" class="catalog-filter-label">
-                      <input class="range-input" type="number" value="0" name="min-price"> от
+
+                  <div class="range-wrrapers-inputs">
+                    <label for="input-from" class="catalog-filter-label range-from">
+                      <input class="range-input" id="input-from" type="number" value="0" name="min-price">
                     </label>
-                    <label for="" class="catalog-filter-label">
-                      <input class="range-input" type="number" value="0" name="max-price"> до
+                    <label for="input-to" class="catalog-filter-label range-to">
+                      <input class="range-input" id="input-to" type="number" value="9000" name="max-price">
                     </label>
-                  </div> -->
+                  </div>
 
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle toggle-min" type="button"></button>
-                      <button class="range-toggle toggle-max" type="button"></button>
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
                     </div>
                   </div>
+
                 </div>
 
 
@@ -140,7 +143,6 @@
 
               <button class="apply-button button-catalog" type="submit">Применить</button>
               <button class="reset-button button-catalog" type="reset">Сбросить</button>
-            </div>
 					</form>
 				</section>
 			</div>
