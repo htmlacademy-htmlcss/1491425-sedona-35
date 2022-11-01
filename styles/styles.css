@@ -821,13 +821,84 @@ body {
 }
 
 .control {
-	line-height: 23px;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+	/* line-height: 23px; */
 }
 
-.control-input {
-	min-width: 20px;
-	min-height: 20px;
-	margin: 0 16px 0 0;
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255);
+}
+
+.control-mark-square {
+  border-radius: 4px;
+}
+
+.control-mark-circle {
+  border-radius: 50%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 12.2px;
+  height: 10px;
+  background-image: url("../images/catalog/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.control:hover .control-label {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.control-input:focus-visible + .control-mark{
+  outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.control:active .control-label {
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.control-input:disabled + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: default;
+}
+
+.control-input:disabled ~ .control-label {
+  color: rgba(255, 255, 255, 0.3);
+  cursor: default;
 }
 
 .range-wrrapers-inputs {
