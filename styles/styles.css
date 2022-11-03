@@ -722,7 +722,12 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  row-gap: 48px;
   grid-auto-rows: 1fr;
+}
+
+.field-group {
+  margin: 0;
 }
 
 .field-styling-arrival{
