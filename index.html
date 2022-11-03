@@ -179,18 +179,22 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group field-styling-arrival">
               <label class="information-field" for="arrival-date">Дата заезда:</label>
-              <input class="date-field field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
-              <button class="calendar-button" type="button">
-                <span class="visually-hidden">Открыть календарь.</span>
-              </button>
+              <div class="wrraper-date">
+                <input class="date-field field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
+                <button class="calendar-button" type="button">
+                  <span class="visually-hidden">Открыть календарь.</span>
+                </button>
+              </div>
               <span class="error-message">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group field-styling-departure">
               <label class="information-field" for="date-departure">Дата выезда:</label>
-              <input class="date-field field" type="text" id="date-departure" name="date-departure" placeholder="Укажите дату">
-              <button class="calendar-button" type="button">
-                <span class="visually-hidden">Открыть календарь.</span>
-              </button>
+              <div class="wrraper-date"></div>
+                <input class="date-field field" type="text" id="date-departure" name="date-departure" placeholder="Укажите дату">
+                <button class="calendar-button" type="button">
+                  <span class="visually-hidden">Открыть календарь.</span>
+                </button>
+              </div>
               <span class="user-information">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <p class="field-group field-styling-adults">
