@@ -178,15 +178,51 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
-              <label class="search-form-label" for="arrival-date">Дата заезда:</label>
+              <label class="information-field" for="arrival-date">Дата заезда:</label>
               <input class="date-field field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
+              <button class="calendar-button">
+                <span class="visually-hidden">Открыть календарь.</span>
+              </button>
               <span class="error-message">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group">
-              <label class="search-form-label" for="date-departure">Дата выезда:</label>
+              <label class="information-field" for="date-departure">Дата выезда:</label>
               <input class="date-field field" type="text" id="date-departure" name="date-departure" placeholder="Укажите дату">
-              <span class="information">На эти даты есть свободные номера. Пока есть.</span>
+              <button class="calendar-button">
+                <span class="visually-hidden">Открыть календарь.</span>
+              </button>
+              <span class="user-information">На эти даты есть свободные номера. Пока есть.</span>
             </p>
+            <p class="field-group">
+              <label class="information-field" for="input-adults">Взрослые:</label>
+              <button class="decrement-button" type="button">
+                <span class="visually-hidden">Уменьшить число.</span>
+              </button>
+              <input class="adults-field field" type="number" id="input-adults" name="number-adults" value="2">
+              <button class="increment-button" type="button">
+                <span class="visually-hidden">Увеличить число.</span>
+              </button>
+            </p>
+            <p class="field-group">
+              <span class="information-label">
+                <label class="information-field" for="input-сhildren">Дети:</label>
+
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <span class="visually-hidden">Информация для родителей, что заселяются с несовершеннолетними детьми.</span>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <button class="decrement-button" type="button">
+                <span class="visually-hidden">Уменьшить число.</span>
+              </button>
+              <input class="сhildren-field field" type="number" id="input-сhildren" name="number-сhildren" value="2">
+              <button class="increment-button" type="button">
+                <span class="visually-hidden">Увеличить число.</span>
+              </button>
+            </p>
+            <button class="search-form-button" type="submit">Найти</button>
           </form>
         </section>
       </div>
