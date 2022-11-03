@@ -672,9 +672,10 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  display: flex;
   width: 100%;
   height: 100%;
+  display: grid;
+  margin: auto;
   background-color: rgba(242, 242, 242, 0.8);
 }
 
@@ -726,29 +727,7 @@ body {
   grid-auto-rows: 1fr;
 }
 
-.field-group {
-  margin: 0;
-}
 
-.field-styling-arrival{
-  grid-area: 1 / 1 / 2 / 5;
-}
-
-.field-styling-departure{
-  grid-area: 2 / 1 / 3 / 5;
-}
-
-.field-styling-adults{
-  grid-area: 3 / 1 / 4 / 3;
-}
-
-.field-styling-сhildren{
-  grid-area: 3 / 3 / 4 / 5;
-}
-
-.search-form-button {
-  grid-area: 4 / 1 / 5 / 5;
-}
 
 /* End Modal window*/
 
