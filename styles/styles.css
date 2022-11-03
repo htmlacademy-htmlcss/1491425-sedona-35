@@ -727,6 +727,114 @@ body {
   grid-auto-rows: 1fr;
 }
 
+.field-arrival-date {
+  grid-area: 1 / 1 / 2 / 5;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-auto-rows: 1fr;
+  grid-template-areas:
+                      "label-date-arrival wrraper-arrival-date wrraper-arrival-date wrraper-arrival-date"
+                      ". error-message error-message .";
+  align-items: center;
+}
+
+.label-serch {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding: 12px 0;
+}
+
+.label-date-arrival {
+  grid-area: label-date-arrival;
+  align-self: baseline;
+  margin-right: 24px;
+}
+
+.wrraper-arrival-date {
+  grid-area: wrraper-arrival-date;
+  padding: 12px 20px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.text-field {
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.text-field::placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.input-period-residence {
+  width: 100%;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.calendar-button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: none;
+  background-image: url("../images/button-calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.message-style {
+  font-size: 16px;
+  padding: 0 20px;
+  color: #333333;
+  align-self: flex-start;
+}
+
+.error-message {
+  color: #FF5757;
+  grid-area: error-message;
+}
+
+.field-departure-date {
+  grid-area: 2 / 1 / 3 / 5;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-auto-rows: 1fr;
+  grid-template-areas:
+                      "label-date-departure wrraper-departure-date wrraper-departure-date wrraper-departure-date"
+                      ". message message .";
+  align-items: center;
+}
+
+.label-date-departure {
+  grid-area: label-date-departure;
+  align-self: baseline;
+  margin-right: 24px;
+}
+
+.wrraper-departure-date {
+  grid-area: wrraper-departure-date;
+  padding: 12px 20px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.message {
+  grid-area: message;
+}
 
 
 /* End Modal window*/
