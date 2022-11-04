@@ -347,16 +347,6 @@ body {
   order: 2;
 }
 
-/* .advantages-decor-line-dark::before {
-  content: "";
-  width: 60px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  left: 85px;
-  top: -32px;
-} */
-
 .advantage-item-pale-blue {
 	background-color: rgba(131, 179, 211, 0.12);
 }
@@ -837,6 +827,136 @@ body {
   grid-area: message;
 }
 
+.wrraper-number-people {
+  grid-area: 3 / 1 / 4 / 5;
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block-adults {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 46px;
+  align-items: center;
+  margin-right: auto;
+}
+
+.block-children {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 46px;
+  align-items: center;
+}
+
+.wrraper-information {
+  display: flex;
+  align-items: center;
+}
+
+.label-children {
+  margin-right: 12px;
+}
+
+.tooltip {
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-toggle {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/button-information.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #83B3D3;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+}
+
+.tooltip-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgb(0 0 0 / 30%);
+  border-radius: 10px;
+  padding: 20px 20px;
+  width: 216px;
+  height: 102px;
+  text-transform: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+  display: none;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 118px;
+  width: 19px;
+  height: 19px;
+  background-color: #333333;
+  transform: rotate(45deg);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus-within + .tooltip-text {
+  display: block;
+}
+
+.people-counter {
+  display: grid;
+  grid-template-columns: 40px 30px 40px;
+}
+
+.button-counter{
+  padding: 14px 10px;
+  border: 0;
+  width: 40px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.decrement-icon {
+  vertical-align: middle;
+}
+
+.number-field {
+  text-align: center;
+  padding: 0;
+}
+
+.number-field::-webkit-outer-spin-button,
+.number-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-form-button {
+  grid-area: 4 / 1 / 5 / 5;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  padding: 18px 77px;
+  background: #83B3D3;
+  border-radius: 10px;
+}
 
 /* End Modal window*/
 
