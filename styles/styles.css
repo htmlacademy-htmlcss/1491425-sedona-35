@@ -684,12 +684,13 @@ body {
   margin: auto;
   padding: 64px 70px;
   background: #FFFFFF;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
 .modal-auth {
   width: 717px;
+  box-sizing: border-box;
 }
 
 .modal-close-button {
