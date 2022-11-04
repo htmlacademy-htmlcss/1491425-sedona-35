@@ -690,13 +690,27 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-image: url("../images/catalog/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #F2F2F2;
   padding: 0;
   border: none;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active .close-icon {
+  opacity: 0.3;
+}
+
+.close-icon {
+  vertical-align: middle;
 }
 
 .modal-title {
@@ -745,7 +759,6 @@ body {
 
 .wrraper-arrival-date {
   grid-area: wrraper-arrival-date;
-  padding: 12px 20px;
   margin-bottom: 3px;
   display: flex;
   justify-content: space-between;
@@ -769,19 +782,55 @@ body {
 
 .input-period-residence {
   width: 100%;
-  padding: 0;
-  margin-right: 20px;
+  padding: 12px 60px 12px 20px;
+}
+
+.input-period-residence:hover {
+  background-color: #E6E6E6;
+  border-radius: 4px;
+}
+
+.input-period-residence:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.input-period-residence:active {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .calendar-button {
   width: 20px;
   height: 20px;
   border: none;
-  padding: none;
-  background-image: url("../images/button-calendar.svg");
+  background-image: url(../images/button-calendar.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.calendar-button:hover {
+  background-color: #83B3D3;
+  border-radius: 4px;
+}
+
+.calendar-button:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.calendar-button:active {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 .message-style {
@@ -815,7 +864,6 @@ body {
 
 .wrraper-departure-date {
   grid-area: wrraper-departure-date;
-  padding: 12px 20px;
   margin-bottom: 3px;
   display: flex;
   justify-content: space-between;
@@ -925,15 +973,43 @@ body {
   width: 40px;
   height: 48px;
   cursor: pointer;
+  fill: #756157;
+  fill-opacity: 0.3;
+  outline: none;
 }
 
+.button-counter:hover .decrement-icon,
+.button-counter:hover .increment-icon {
+  fill-opacity: 1;
+}
+
+.button-counter:focus-visible .decrement-icon,
+.button-counter:focus-visible .increment-icon {
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+  fill-opacity: 1;
+}
+
+.button-counter:active .decrement-icon,
+.button-counter:active .increment-icon {
+  fill-opacity: 0.2;
+}
+
+
 .decrement-icon {
+  padding: 9px 3px;
+  vertical-align: middle;
+}
+
+.increment-icon {
+  padding: 3px;
   vertical-align: middle;
 }
 
 .number-field {
   text-align: center;
   padding: 0;
+  cursor: pointer;
 }
 
 .number-field::-webkit-outer-spin-button,
@@ -941,6 +1017,18 @@ body {
   appearance: none;
   margin: 0;
   padding: 0;
+}
+
+.number-field:hover {
+  background-color: #E6E6E6;
+  border-radius: 4px;
+}
+
+.number-field:focus-visible {
+  background-color: #E6E6E6;
+  border-radius: 4px;
+  outline: 2px solid black;
+  outline-offset: -2px;
 }
 
 .search-form-button {
@@ -956,6 +1044,16 @@ body {
   padding: 18px 77px;
   background: #83B3D3;
   border-radius: 10px;
+}
+
+.search-form-button:hover,
+.search-form-button:focus-visible {
+  background-color: #68A2CA;
+}
+
+.search-form-button:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* End Modal window*/
