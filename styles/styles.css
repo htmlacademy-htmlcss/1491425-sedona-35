@@ -139,16 +139,16 @@ body {
   height: 2px;
 }
 
-.navigation-user-link-search {
+.navigation-img-search {
 	background-image: url("../images/header/search.svg");
 }
 
-.navigation-user-link-heart {
+.navigation-img-heart {
 	background-image: url("../images/header/heart.svg");
   position: relative;
 }
 
-.navigation-user-number-items {
+.navigation-user-number {
   display: block;
   width: 20px;
   height: 20px;
@@ -165,8 +165,8 @@ body {
   top: 9px;
 }
 
-.navigation-user-link-search,
-.navigation-user-link-heart {
+.navigation-img-search,
+.navigation-img-heart {
 	background-repeat: no-repeat;
 	background-position: center;
 	min-width: 20px;
@@ -367,11 +367,11 @@ body {
   order: 2;
 }
 
-.advantage-item-pale-blue {
+.advantage-pale-blue {
 	background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantage-item-light-blue {
+.advantage-light-blue {
 	background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -402,19 +402,19 @@ body {
 	text-align: center;
 }
 
-.services-item-img-house::before {
+.services-img-house::before {
 	content: url("../images/main/services-house.svg");
 }
 
-.services-item-img-food::before {
+.services-img-food::before {
 	content: url("../images/main/services-food.svg");
 }
 
-.services-item-img-souvenir::before {
+.services-img-souvenir::before {
 	content: url("../images/main/services-souvenir.svg");
 }
 
-.services-item-pale-blue {
+.services-item-pale {
 	background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -1084,7 +1084,7 @@ body {
 
 	/* Start Main-inner */
 
-		/* Start wrraper-controls-search-hotel */
+		/* Start wrraper-controls-search */
 
 			/* Start Inner-header */
 
@@ -1092,7 +1092,7 @@ body {
 	flex-grow: 1;
 }
 
-.wrraper-controls-search-hotel {
+.wrraper-controls-search {
 	background-color: #354751;
 	background-image: url("../images/catalog/background-catalog-filter.jpg");
 	background-repeat: no-repeat;
@@ -1172,7 +1172,7 @@ body {
 }
 
 .catalog-filter-infrastructure,
-.catalog-filter-housing-type,
+.catalog-filter-housing,
 .catalog-filter-price,
 .catalog-filter-buttons {
 	border: none;
@@ -1189,7 +1189,7 @@ body {
   margin-right: 70px;
 }
 
-.catalog-filter-housing-type .catalog-filter-title {
+.catalog-filter-housing .catalog-filter-title {
   width: 150px;
   margin-right: 142px;
 }
@@ -1541,7 +1541,7 @@ body {
 }
 			/* End Catalog-hotel*/
 
-		/* End wrraper-controls-search-hotel */
+		/* End wrraper-controls-search */
 
 		/* Start wrraper-products */
 
@@ -1704,18 +1704,18 @@ body {
 	order: 1;
 }
 
-.product-short-text-hotel{
+.product-text-hotel{
   justify-self: start;
   grid-column: 1 / 2;
 }
 
-.product-short-text-price{
+.product-text-price{
   justify-self: end;
   grid-column: 2 / 3;
 }
 
-.product-short-text-hotel,
-.product-short-text-price {
+.product-text-hotel,
+.product-text-price {
 	margin: 0;
 	color: #333333;
 }
@@ -1758,19 +1758,19 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-link-favorites-active {
+.button-favorites-active {
 	background-color: #7DB54F;
 }
 
-.button-link-favorites-active:hover {
+.button-favorites-active:hover {
   background-color: #6C9E42;
 }
 
-.button-link-favorites-active:focus-visible {
+.button-favorites-active:focus-visible {
   background-color: #6C9E42;
 }
 
-.button-link-favorites-active:active {
+.button-favorites-active:active {
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1805,7 +1805,7 @@ body {
   width: 105px;
 }
 
-.product-card-hotel-rating {
+.product-hotel-rating {
 	grid-column: 2 / 3;
 	margin: 0;
 	padding: 8px 22px;
