@@ -117,7 +117,7 @@ body {
 }
 
 .navigation-link {
-	padding: 20px 0;
+	padding: 18px 0;
   margin: 0 16px;
 }
 
@@ -135,7 +135,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1px;
+  bottom: -2px;
   height: 2px;
 }
 
@@ -162,7 +162,7 @@ body {
   text-align: center;
   position: absolute;
   left: 20px;
-  top: 11px;
+  top: 9px;
 }
 
 .navigation-user-link-search,
@@ -171,7 +171,7 @@ body {
 	background-position: center;
 	min-width: 20px;
 	min-height: 20px;
-	padding: 22px 12px;
+	padding: 20px 12px;
 }
 
 .button-link {
@@ -205,6 +205,24 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.navigation-link:hover,
+.navigation-link:focus-visible {
+  color: #756257;
+}
+
+.navigation-link:active {
+  color: rgba(117,97,87, 0.5)
+}
+
+.navigation-user-link:hover {
+  opacity: 0.7;
+}
+
+.navigation-user-link:active {
+  opacity: 0.4;
+}
+
+
 /* End Header */
 
 /* Start Main-index */
@@ -218,7 +236,6 @@ body {
 .hero {
 	display: flex;
   flex-direction: column;
-	font-family: 'PT Sans', sans-serif;
 	text-align: center;
 	padding-bottom: 90px;
 }
@@ -322,7 +339,7 @@ body {
 	flex-direction: column;
   align-items: center;
 	flex-wrap: wrap;
-	padding: 103px 85px 121px;
+	padding: 103px 84px 121px;
 	width: 400px;
 }
 
@@ -340,7 +357,7 @@ body {
 	font-size: 24px;
 	line-height: 28px;
 	text-transform: uppercase;
-	margin: 0 29.5px 30px;
+	margin: 0 29px 30px;
 }
 
 .advantages-text {
@@ -582,7 +599,7 @@ body {
   grid-auto-rows: 1fr;
   grid-auto-flow: column;
   gap: 15px 24px;
-  padding: 40px 70px 30px;
+  padding: 40px 70px 26px;
   align-items: center;
   justify-content: space-between;
   text-align: center;
@@ -621,6 +638,10 @@ body {
 }
 
 .footer-phone {
+  font-style: normal
+}
+
+.phone {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -630,17 +651,18 @@ body {
   color: #000000;
   grid-column: 2 / 3;
   padding-top: 4px;
+  width: max-content;
 }
 
-.footer-phone:hover {
+.phone:hover {
   color: #756157;
 }
 
-.footer-phone:focus-visible {
+.phone:focus-visible {
   color: #756157;
 }
 
-.footer-phone:active {
+.phone:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -1007,6 +1029,13 @@ body {
 .number-field::-webkit-outer-spin-button,
 .number-field::-webkit-inner-spin-button {
   appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+  padding: 0;
+}
+
+.number-field {
+  -moz-appearance: textfield;
   margin: 0;
   padding: 0;
 }
@@ -1123,6 +1152,14 @@ body {
 
 .breadcrumbs-link {
 	font-size: 16px;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 			/* End Inner-header*/
@@ -1295,6 +1332,14 @@ body {
   position: relative;
 }
 
+.range-from {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-to {
+  border-radius: 0 4px 4px 0;
+}
+
 .range-from,
 .range-to {
   position: relative;
@@ -1329,22 +1374,54 @@ body {
 }
 
 .range-input {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   border: none;
   padding-left: 20px;
-  width: 105px;
+  width: 143px;
   box-sizing: border-box;
-  outline: none;
   background-color: #F2F2F2;
+  height: 48px;
+  padding-right: 40px;
+}
+
+.range-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-max {
+  border-radius: 0 4px 4px 0;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.range-input {
+  -moz-appearance: textfield;
+}
+
+.range-min:hover,
+.range-max:hover {
+  background-color: #E6E6E6;
+}
+
+.range-min:focus-visible,
+.range-max:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.range-min:active,
+.range-max:active {
+  background: #F2F2F2;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
 }
 
 .range-scale {
@@ -1499,19 +1576,21 @@ body {
 
 .select-control {
   font: inherit;
-	color: #333333;
-	padding: 14px 52px 14px 20px;
-	width: 292px;
-	border: 2px solid #E5E5E5;
-	border-radius: 4px;
-  background-image: url("../images/catalog/arrow-bottom.svg");
+  color: #333333;
+  padding: 14px 52px 14px 20px;
+  width: 292px;
+  outline: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-image: url(../images/catalog/arrow-bottom.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #FFF;
   appearance: none;
+  border: none;
 }
 
 .select-control:hover {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 
 .select-control:focus-visible {
@@ -1519,12 +1598,12 @@ body {
 }
 
 .select-control:active {
-  border: 2px solid #3F5E72;
+  outline: 2px solid #3F5E72;
 }
 
 .select-control:disabled {
   color: rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  outline: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .select-control:disabled:hover {
@@ -1540,7 +1619,7 @@ body {
 	display: inline-block;
 	width: 44px;
 	height: 44px;
-	border: 2px solid #E5E5E5;
+	outline: 2px solid #E5E5E5;
 	border-radius: 4px;
 	box-sizing: border-box;
   background-repeat: no-repeat;
@@ -1548,20 +1627,19 @@ body {
 }
 
 .sort-button:hover {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .sort-button:focus-visible {
-  border: 2px solid #68A2CA;
-  outline: none;
+  outline: 2px solid #68A2CA;
 }
 
 .sort-button:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .button-active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .sort-button:not(:last-child){
@@ -1625,7 +1703,7 @@ body {
 	line-height: 28px;
 	color: #000000;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 1px;
 	order: 1;
 }
 
@@ -1749,6 +1827,7 @@ body {
 
 .pagination-list {
 	display: flex;
+  flex-wrap: wrap;
 	gap: 8px;
 	list-style-type: none;
 	margin-top: 0;
@@ -1773,16 +1852,19 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   background: #82B3D3;
-  border: 1px solid #82B3D3;
   border-radius: 4px;
 }
 
 .pagination-link:hover {
   background-color: #68A2CA;
+  outline: 1px solid #82B3D3;
+  outline-offset: -1px;
 }
 
 .pagination-link:focus-visible {
   background-color: #68A2CA;
+  outline: 1px solid #82B3D3;
+  outline-offset: -1px;
 }
 
 .pagination-link:active {
