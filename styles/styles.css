@@ -948,6 +948,7 @@ body {
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  margin-top: 15px;
   padding: 20px 20px;
   width: 216px;
   height: 102px;
@@ -956,7 +957,6 @@ body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 15px;
   display: none;
 }
 
@@ -1028,8 +1028,8 @@ body {
 
 .number-field::-webkit-outer-spin-button,
 .number-field::-webkit-inner-spin-button {
-  appearance: none;
   -moz-appearance: textfield;
+  appearance: none;
   margin: 0;
   padding: 0;
 }
