@@ -1,9 +1,9 @@
 @font-face {
-	font-family: "PT Sans";
-	src: url("../fonts/ptsans-400.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+	  font-family: "PT Sans";
+	  src: url("../fonts/ptsans-400.woff2") format("woff2");
+	  font-weight: 400;
+	  font-style: normal;
+	  font-display: swap;
 }
 
 @font-face {
@@ -13,8 +13,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-
-/* Общие стили для всей страницы !!! */
 
 html {
 	height: 100%;
@@ -53,8 +51,6 @@ body {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-
-/* Start Header  */
 
 .page-header {
   display: grid;
@@ -225,16 +221,9 @@ body {
   opacity: 0.4;
 }
 
-
-/* End Header */
-
-/* Start Main-index */
-
 .main-index {
 	flex-grow: 1;
 }
-
-/* Start Section Hero */
 
 .hero {
 	display: flex;
@@ -290,10 +279,6 @@ body {
 	padding-right: 85px;
 	order: 2;
 }
-
-/* End Section Hero */
-
-/* Start Section Advantages */
 
 .advantages-list {
 	display: flex;
@@ -386,10 +371,6 @@ body {
 	color: #ffffff;
 }
 
-/* End Section Advantages */
-
-/* Start Section Services */
-
 .services-list {
 	list-style-type: none;
 	padding: 0;
@@ -435,10 +416,6 @@ body {
 	margin: 0;
 }
 
-/* End Section Services */
-
-/* Start Section Hotel-search */
-
 .hotel-search {
 	background: #ffffff;
 	text-align: center;
@@ -483,10 +460,6 @@ body {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
-
-/* End Section Hotel-search */
-
-/* Start Section Subscribe */
 
 .subscribe {
   text-align: center;
@@ -595,12 +568,6 @@ body {
   cursor: default;
 }
 
-/* End Section Subscribe */
-
-/* End Main-index */
-
-/* Start Section Footer */
-
 .page-footer {
   display: grid;
   grid-template-columns: 148px 333px 120px;
@@ -699,10 +666,6 @@ body {
 .logo-html-academy:active {
   fill: rgba(117, 97, 87, 0.3);
 }
-
-/* End Footer */
-
-/* Start Modal window*/
 
 .modal-container {
   position: fixed;
@@ -1018,7 +981,6 @@ body {
   fill-opacity: 0.2;
 }
 
-
 .decrement-icon {
   padding: 9px 3px;
   vertical-align: middle;
@@ -1086,16 +1048,6 @@ body {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
-
-/* End Modal window*/
-
-/* Start Catalog */
-
-	/* Start Main-inner */
-
-		/* Start wrraper-controls-search */
-
-			/* Start Inner-header */
 
 .main-inner {
 	flex-grow: 1;
@@ -1170,10 +1122,6 @@ body {
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.6);
 }
-
-			/* End Inner-header*/
-
-			/* Start Catalog-hotel*/
 
 .catalog-filter {
   display: grid;
@@ -1548,18 +1496,11 @@ body {
 .reset-button:disabled:hover {
   cursor: default;
 }
-			/* End Catalog-hotel*/
-
-		/* End wrraper-controls-search */
-
-		/* Start wrraper-products */
 
 .wrraper-products {
 	padding: 50px 70px 60px;
 	background-color: #ffffff;
 }
-
-		/* Start Catalog-sort */
 
 .catalog-sort {
   display: grid;
@@ -1663,10 +1604,6 @@ body {
 .sort-button-list {
 	background-image: url("../images/catalog/sort-list.svg");
 }
-
-		/*End Catalog-sort */
-
-		/* Start Product-list */
 
 .product-list {
 	list-style-type: none;
@@ -1827,10 +1764,6 @@ body {
   border-radius: 4px;
 }
 
-		/* End Product-list */
-
-		/* Start Pagination */
-
 .pagination-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 60px);
@@ -1900,12 +1833,6 @@ body {
 	border-radius: 4px;
 }
 
-		/* End Pagination */
-
-		/* End wrraper-products */
-
-		/* Start Section Subscribe */
-
 .subscribe-title-color {
 	color: #000000;
 }
@@ -1913,8 +1840,3 @@ body {
 .subscribe-description-color {
 	color: #333333;
 }
-		/* End Section Subscribe */
-
-	/* End Main-inner */
-
-	/* Start Inner-footer */
