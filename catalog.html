@@ -8,16 +8,11 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <!-- Обёртка для всех блоков -->
     <div class="container">
-
-      <!-- Header сайта-->
       <header class="page-header">
-        <!-- Лого сайта-->
         <a class="logo-link" href="index.html">
           <img class="logo-image" src="images/header/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
         </a>
-        <!-- Навигация сайта-->
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -29,9 +24,7 @@
             <li class="navigation-item">
               <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
-
           </ul>
-
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-img-search" href="#">
@@ -48,14 +41,8 @@
           <a class="button-link button-link-brown" href="#interested">ХОЧУ СЮДА!</a>
         </nav>
       </header>
-
-      <!-- Главный раздел страницы Catalog-->
       <main class="main-inner">
-
-        <!-- Обёртка для стилизации-->
         <div class="wrraper-controls-search">
-
-          <!-- Внутрений Header стр. Catalog-->
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs-list">
@@ -69,11 +56,8 @@
               </li>
             </ul>
           </header>
-
-          <!-- Раздел фильтров-->
           <section class="catalog-hotel">
             <h2 class="visually-hidden">Список фильтров по поиску гостиницы.</h2>
-
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-infrastructure">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -101,7 +85,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="catalog-filter-housing">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
@@ -128,7 +111,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="catalog-filter-price">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <div class="range">
@@ -159,20 +141,14 @@
             </form>
           </section>
         </div>
-
-        <!-- Обёртка для стилизации -->
         <div class="wrraper-products">
-
-          <!-- Раздел сортировки-->
           <div class="catalog-sort">
             <p class="catalog-result">Найдено гостиниц: 38</p>
-
             <select class="select-control" aria-label="Сортировка">
               <option value="cheaper" selected>Сначала дешевые</option>
               <option value="expensive">Сначала дороже</option>
               <option value="popular" >Популярное</option>
             </select>
-
             <div class="wrraper-sort-button">
               <a class="sort-button sort-button-cards button-active" href="#">
                 <span class="visually-hidden">Показать карточки.</span>
@@ -185,8 +161,6 @@
               </a>
             </div>
           </div>
-
-          <!--  Результат поиска -->
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -253,8 +227,6 @@
                 <p class="product-hotel-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
-
-          <!-- Пагинация -->
           <ul class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -275,10 +247,7 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-
         </div>
-
-        <!-- Раздел Подписаться -->
         <section class="subscribe">
           <h2 class="subscribe-news-title subscribe-title-color">Подпишитесь на рассылку</h2>
           <p class="subscribe-description subscribe-description-color">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
@@ -288,8 +257,6 @@
           </form>
         </section>
       </main>
-
-      <!-- Footer сайта-->
       <footer class="page-footer">
         <h2 class="visually-hidden">Контактные данные.</h2>
         <ul class="footer-social-list">
