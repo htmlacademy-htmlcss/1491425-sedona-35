@@ -21,16 +21,16 @@ html {
 }
 
 body {
-	font-family: "PT Sans", sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 21px;
-	color: #000000;
-	background-color: #f2f2f2;
-	margin: 0;
 	display: flex;
   flex-direction: column;
   min-height: 100%;
+	margin: 0 auto;
+	font-family: "PT Sans", sans-serif;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #000000;
+	background-color: #f2f2f2;
 }
 
 .container {
@@ -57,12 +57,12 @@ body {
 /* Start Header  */
 
 .page-header {
-	background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 20px 30px;
+  grid-column: 1 / -1;
   padding: 0 70px;
-  gap: 30px;
+	background-color: #ffffff;
 }
 
 .logo-link {
@@ -76,11 +76,12 @@ body {
 }
 
 .navigation {
-	display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(339px, 1fr) 88px 160px;
+  grid-auto-flow: column;
   align-items: center;
-  flex-grow: 1;
-  gap: 20.5px;
+  grid-column: 2 / 3;
+  gap: 20px;
 }
 
 .navigation-list,
@@ -91,16 +92,18 @@ body {
 }
 
 .navigation-list {
-	width: 600px;
-	display: flex;
-	flex-wrap: wrap;
-  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  grid-column: 1 / 2;
 }
 
 .navigation-user {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
-	max-width: 88px;
+  grid-column: 2 / 3;
+  max-width: 88px;
+  align-self: center;
 }
 
 .navigation-link,
@@ -188,8 +191,10 @@ body {
 }
 
 .button-link-brown {
-	background-color: #756157;
-	padding: 8px 34px;
+  grid-column: 3 / 4;
+  padding: 8px 34px;
+  background-color: #756157;
+  align-self: center;
 }
 
 .button-link-brown:hover {
@@ -460,10 +465,11 @@ body {
 }
 
 .hotel-search-link {
-	background-color: #756157;
+  max-width: 376px;
+	padding: 8px 50px;
 	font-size: 20px;
 	line-height: 36px;
-	padding: 8px 50px;
+	background-color: #756157;
 }
 
 .hotel-search-link:hover {
@@ -520,7 +526,7 @@ body {
 }
 
 .subscribe-email {
-	width: 452px;
+	min-width: 452px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
@@ -595,7 +601,7 @@ body {
 
 .page-footer {
   display: grid;
-  grid-template-columns: 148px 331px 120px;
+  grid-template-columns: 148px 333px 120px;
   grid-auto-rows: 1fr;
   grid-auto-flow: column;
   gap: 15px 24px;
@@ -606,14 +612,15 @@ body {
 }
 
 .footer-social-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 329px;
+  align-self: start;
   grid-column: 1/2;
+  width: 329px;
+  margin: 0;
+  padding: 0;
   padding-top: 5px;
+  list-style-type: none;
 }
 
 .social-link {
@@ -637,7 +644,8 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.footer-phone {
+.contact-phone {
+  padding-top: 4px;
   font-style: normal
 }
 
@@ -704,6 +712,7 @@ body {
   display: grid;
   margin: auto;
   background-color: rgba(242, 242, 242, 0.8);
+  overflow: auto;
 }
 
 .modal-container-close {
@@ -895,18 +904,16 @@ body {
 }
 
 .block-adults {
-  grid-column: 1 / 2;
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: min-content 1fr;
   column-gap: 46px;
   align-items: center;
   margin-right: auto;
 }
 
 .block-children {
-  grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: min-content 1fr;
   column-gap: 46px;
   align-items: center;
 }
@@ -1167,8 +1174,10 @@ body {
 			/* Start Catalog-hotel*/
 
 .catalog-filter {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 200px 272px 338px 191px;
+  gap: 20px;
+  grid-auto-flow: dense;
 }
 
 .catalog-filter-infrastructure,
@@ -1184,24 +1193,21 @@ body {
   flex-wrap: wrap;
 }
 
-.catalog-filter-infrastructure .catalog-filter-title {
-  width: 150px;
-  margin-right: 70px;
+.catalog-filter-infrastructure {
+  grid-column: 1 / 2;
 }
 
-.catalog-filter-housing .catalog-filter-title {
-  width: 150px;
-  margin-right: 142px;
+.catalog-filter-housing {
+  grid-column: 2 / 3;
 }
 
 .catalog-filter-price {
-  width: 288px;
-  margin-right: 69px;
+  grid-column: 3 / 4;
 }
 
 .catalog-filter-buttons {
-  width: 191px;
-  padding-top: 56px;
+  grid-column: 4 / 5;
+  padding-top: 55px;
 }
 
 .catalog-filter-title {
@@ -1209,7 +1215,7 @@ body {
 	font-size: 20px;
 	line-height: 24px;
 	text-transform: capitalize;
-	margin-bottom: 33px;
+	margin-bottom: 32px;
 	padding: 0;
 }
 
@@ -1227,7 +1233,7 @@ body {
 }
 
 .catalog-filter-item:not(:last-child) {
-	margin-bottom: 16px;
+	margin-bottom: 17px;
 }
 
 .control {
@@ -1320,14 +1326,14 @@ body {
 
 .range-wrrapers-inputs {
   display: flex;
-  margin-bottom: 43px;
+  margin-bottom: 44px;
 }
 
 .catalog-filter-label {
   display: flex;
   align-items: center;
   width: 143px;
-  min-height: 48px;
+  min-height: 49px;
   background-color: #f2f2f2;
   position: relative;
 }
@@ -1374,17 +1380,18 @@ body {
 }
 
 .range-input {
+  box-sizing: border-box;
+  width: 143px;
+  height: 48px;
+  margin-top: -1px;
+  padding-left: 20px;
+  padding-right: 40px;
   font-family: "PT Sans", sans-serif;
-  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  border: none;
-  padding-left: 20px;
-  width: 143px;
-  box-sizing: border-box;
+  font-weight: 700;
   background-color: #f2f2f2;
-  height: 48px;
-  padding-right: 40px;
+  border: none;
 }
 
 .range-min {
@@ -1484,7 +1491,7 @@ body {
 }
 
 .button-catalog:not(:last-child) {
-	margin-bottom: 32px;
+	margin-bottom: 34px;
 }
 
 .apply-button {
@@ -1553,11 +1560,12 @@ body {
 		/* Start Catalog-sort */
 
 .catalog-sort {
-	display: flex;
+  display: grid;
+  grid-template-columns: 1fr 294px 158px;
+  grid-auto-flow: column;
   align-items: center;
-  gap: 70px;
+  gap: 20px 70px;
   margin-bottom: 40px;
-	box-sizing: border-box;
 }
 
 .catalog-result {
@@ -1567,8 +1575,6 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-	flex-grow: 1;
-	width: 400px;
 }
 
 .select-control {
@@ -1584,6 +1590,7 @@ body {
   background-color: #ffffff;
   appearance: none;
   border: none;
+  grid-column: 2 / 3;
 }
 
 .select-control:hover {
@@ -1608,8 +1615,12 @@ body {
 }
 
 .wrraper-sort-button {
-	display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 44px);
+  grid-template-rows: min-content;
+  gap: 12px 12px;
+  align-self: center;
+  grid-column: 3 / 4;
 }
 
 .sort-button {
@@ -1637,10 +1648,6 @@ body {
 
 .button-active {
   outline: 2px solid #000000;
-}
-
-.sort-button:not(:last-child){
-	margin-right: 8px;
 }
 
 .sort-button-cards {
@@ -1823,13 +1830,13 @@ body {
 		/* Start Pagination */
 
 .pagination-list {
-	display: flex;
-  flex-wrap: wrap;
-	gap: 8px;
-	list-style-type: none;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 60px);
+  gap: 20px 8px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .pagination-item {
@@ -1841,8 +1848,8 @@ body {
 	display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
@@ -1883,8 +1890,8 @@ body {
 	display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
 	font-size: 22px;
 	line-height: 26px;
 	background-color: #ffffff;
