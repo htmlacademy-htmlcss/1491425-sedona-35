@@ -109,7 +109,6 @@ body {
 .navigation-link,
 .navigation-user-link {
 	display: block;
-	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
@@ -179,7 +178,6 @@ body {
 
 .button-link {
 	display: inline-block;
-	font-family: 'PT Sans', sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
@@ -242,7 +240,7 @@ body {
 	display: flex;
   flex-direction: column;
 	text-align: center;
-	padding-bottom: 90px;
+	padding-bottom: 91px;
 }
 
 .hero-banner {
@@ -312,7 +310,7 @@ body {
 }
 
 .advantage-wrrapep {
-  padding: 92px 85px 111px;
+  padding: 93px 85px 111px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -424,11 +422,12 @@ body {
 }
 
 .services-subtitle {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 28px;
-	text-transform: uppercase;
-	margin: 30px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-top: 23px;
+  margin-bottom: 31px;
 }
 
 .services-text {
@@ -490,11 +489,11 @@ body {
 /* Start Section Subscribe */
 
 .subscribe {
-	text-align: center;
-	color: #ffffff;
-	display: flex;
-	flex-direction: column;
-	padding: 96px 85px 104px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 96px 258px 104px;
 }
 
 .subscribe-background {
@@ -521,25 +520,25 @@ body {
 }
 
 .subscribe-form {
-	display: flex;
-	justify-content: center;
+  display: flex;
 }
 
 .subscribe-email {
-	min-width: 452px;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 24px;
-	padding: 12px 20px;
-	background-color: #f2f2f2;
-	border-radius: 4px 0 0 4px;
+  width: 415px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+  background-color: rgb(242, 242, 242, 0.6);
+  border-radius: 4px 0 0 4px;
   border: none;
 }
-
+/*
 .subscribe-email::placeholder {
   color: #000000;
   opacity: 0.6;
-}
+} */
 
 .subscribe-email:hover {
   background-color: #e6e6e6;
@@ -560,15 +559,16 @@ body {
 
 .subscribe-button {
   font-family: "PT Sans", sans-serif;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 36px;
-	padding: 8px 50px;
-	color: #ffffff;
-	background-color: #82b3d3;
-	border-radius: 0 4px 4px 0;
-	border: none;
-	cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(130, 179, 211);
+  border-radius: 0 4px 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 232px;
 }
 
 .subscribe-button:hover {
@@ -1104,7 +1104,7 @@ body {
 	background-image: url("../images/catalog/background-catalog-filter.jpg");
 	background-repeat: no-repeat;
   background-size: cover;
-	padding: 35px 70px 70px;
+	padding: 35px 70px 49px;
 	color: #ffffff;
 }
 
@@ -1669,7 +1669,7 @@ body {
 .product-list {
 	list-style-type: none;
 	margin-top: 0;
-	margin-bottom: 80px;
+	margin-bottom: 77px;
 	padding-left: 0;
 	display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1698,7 +1698,7 @@ body {
 .product-card-image {
 	display: block;
   object-fit: contain;
-	margin-bottom: 16px;
+	margin-bottom: 15px;
 }
 
 .product-card-subtitle {
