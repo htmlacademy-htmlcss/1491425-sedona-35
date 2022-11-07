@@ -530,15 +530,15 @@ body {
   font-size: 18px;
   line-height: 24px;
   padding: 12px 20px;
-  background-color: rgb(242, 242, 242, 0.6);
+  background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: none;
 }
-/*
+
 .subscribe-email::placeholder {
   color: #000000;
   opacity: 0.6;
-} */
+}
 
 .subscribe-email:hover {
   background-color: #e6e6e6;
@@ -584,12 +584,14 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.subscribe-button:disabled {
+.subscribe-button:disabled,
+.subscribe-email:disabled {
   background-color: #e5e5e5;
   color: #ffffff;
 }
 
-.subscribe-button:disabled:hover {
+.subscribe-button:disabled:hover,
+.subscribe-email:disabled:hover {
   cursor: default;
 }
 
