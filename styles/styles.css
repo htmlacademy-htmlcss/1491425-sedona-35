@@ -995,13 +995,15 @@ body {
   text-align: center;
   padding: 0;
   cursor: pointer;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   margin: 0;
 }
 
 .number-field::-webkit-outer-spin-button,
 .number-field::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
   padding: 0;
 }
@@ -1337,7 +1339,8 @@ body {
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-min {
@@ -1350,7 +1353,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1523,7 +1527,8 @@ body {
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-color: #ffffff;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   border: none;
   grid-column: 2 / 3;
 }
