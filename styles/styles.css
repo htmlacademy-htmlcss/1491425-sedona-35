@@ -236,13 +236,13 @@ body {
   padding-top: 51px;
   margin-bottom: 69px;
   background-color: #34576b;
-  background-image: url("../images/main/main-banner.jpg");
+  background-image: url("../images/main/promo-banner.jpg");
   background-repeat: no-repeat;
 }
 
 .hero-banner::after {
   content: "";
-  background-image: url("../images/main/main-bottom-detail.svg");
+  background-image: url("../images/main/promo-detail.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -818,7 +818,7 @@ body {
   width: 20px;
   height: 20px;
   border: none;
-  background-image: url("../images/button-calendar.svg");
+  background-image: url("../images/icon-calendar.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -904,7 +904,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../images/button-information.svg");
+  background-image: url("../images/icon-information.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #83b3d3;
@@ -1050,7 +1050,7 @@ body {
 
 .wrraper-controls-search {
   background-color: #354751;
-  background-image: url("../images/catalog/background-catalog-filter.jpg");
+  background-image: url("../images/catalog/background-filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 70px 49px;
@@ -1211,7 +1211,7 @@ body {
   left: 4px;
   width: 12.2px;
   height: 10px;
-  background-image: url("../images/catalog/check.svg");
+  background-image: url("../images/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1718,7 +1718,7 @@ body {
   justify-self: start;
   align-self: center;
   margin: 0;
-  background-image: url("../images/catalog/rating-star.svg");
+  background-image: url("../images/icon-star.svg");
   background-repeat: space;
   height: 17px;
 }
