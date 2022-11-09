@@ -793,6 +793,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  background-color: #f2f2f2;
   border: none;
 }
 
@@ -966,9 +967,10 @@ body {
   width: 40px;
   height: 48px;
   padding: 14px 10px;
+  background-color: #f2f2f2;
+  border: 0;
   fill: #756157;
   fill-opacity: 0.3;
-  border: 0;
   cursor: pointer;
   outline: none;
 }
@@ -992,6 +994,19 @@ body {
 .button-counter:active .decrement-icon,
 .button-counter:active .increment-icon {
   fill-opacity: 0.2;
+}
+
+.button-counter:disabled,
+.button-counter:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
+.button-counter:disabled .decrement-icon,
+.button-counter:disabled .increment-icon {
+  background-color: #e5e5e5;
+  fill: #ffffff;
+  cursor: default;
 }
 
 .decrement-icon {
@@ -1023,6 +1038,11 @@ body {
   padding: 0;
 }
 
+.number-field:hover {
+  background-color: #e6e6e6;
+  border-radius: 4px;
+}
+
 .number-field:focus-visible {
   background-color: #e6e6e6;
   border-radius: 4px;
@@ -1035,6 +1055,13 @@ body {
   border: 2px solid #000000;
   border-radius: 4px;
   outline: none;
+}
+
+.number-field:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #e5e5e5;
+  border: none;
+  cursor: default;
 }
 
 .search-form-button {
