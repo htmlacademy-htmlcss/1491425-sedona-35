@@ -148,8 +148,8 @@ body {
 
 .navigation-user-number {
   display: block;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   border-radius: 50%;
   background-color: #7db54f;
   font-family: "PT Sans", sans-serif;
@@ -384,18 +384,28 @@ body {
   box-sizing: border-box;
   padding: 80px 85px;
   text-align: center;
+  position: relative;
 }
 
 .services-img-house::before {
   content: url("../images/main/services-house.svg");
+  position: absolute;
+  top: 81px;
+  left: 164px;
 }
 
 .services-img-food::before {
   content: url("../images/main/services-food.svg");
+  position: absolute;
+  top: 81px;
+  left: 164px;
 }
 
 .services-img-souvenir::before {
   content: url("../images/main/services-souvenir.svg");
+  position: absolute;
+  top: 79px;
+  left: 169px;
 }
 
 .services-item-pale {
@@ -407,7 +417,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin-top: 23px;
+  margin-top: 104px;
   margin-bottom: 31px;
 }
 
@@ -687,14 +697,14 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 64px 70px;
+  padding: 64px 70px 55px;
   background: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
 .modal-auth {
-  width: 717px;
+  width: 716px;
   box-sizing: border-box;
 }
 
@@ -964,6 +974,10 @@ body {
   outline: none;
 }
 
+.increment-button {
+  order: 2;
+}
+
 .button-counter:hover .decrement-icon,
 .button-counter:hover .increment-icon {
   fill-opacity: 1;
@@ -992,12 +1006,14 @@ body {
 }
 
 .number-field {
-  text-align: center;
-  padding: 0;
-  cursor: pointer;
   -webkit-appearance: textfield;
           appearance: textfield;
   margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  order: 1;
 }
 
 .number-field::-webkit-outer-spin-button,
@@ -1008,16 +1024,18 @@ body {
   padding: 0;
 }
 
-.number-field:hover {
-  background-color: #e6e6e6;
-  border-radius: 4px;
-}
-
 .number-field:focus-visible {
   background-color: #e6e6e6;
   border-radius: 4px;
-  outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
+}
+
+.number-field:active {
+  background-color: #f2f2f2;
+  border: 2px solid #000000;
+  outline: none;
+  border-radius: 4px;
 }
 
 .search-form-button {
@@ -1763,7 +1781,7 @@ body {
 
 .pagination-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 60px);
+  grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
   gap: 20px 8px;
   list-style-type: none;
   margin-top: 0;
