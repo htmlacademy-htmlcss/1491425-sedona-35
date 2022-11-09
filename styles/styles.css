@@ -1017,10 +1017,10 @@ body {
 
 .number-field::-webkit-outer-spin-button,
 .number-field::-webkit-inner-spin-button {
-  margin: 0;
-  padding: 0;
   -webkit-appearance: none;
           appearance: none;
+  margin: 0;
+  padding: 0;
 }
 
 .number-field:focus-visible {
@@ -1345,7 +1345,7 @@ body {
 
 .range-input {
   -webkit-appearance: textfield;
-  appearance: textfield;
+          appearance: textfield;
   width: 143px;
   height: 48px;
   margin-top: -1px;
